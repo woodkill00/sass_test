@@ -75,5 +75,11 @@
   },
   "os": [
     "linux"
-  ]
+  ],
+  "type": "module",
+  "lint-staged": {
+    "packages/**/*.{js,md,ts,css,sass,less,graphql,yml,scss,json,vue}": [
+      "prettier --write"
+    ]
+  }
 }
