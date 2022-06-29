@@ -50,8 +50,9 @@ npm install $packageName --save-dev <br />
 npm audit fix <br />
 
 # lint-staged.config.js
+https://github.com/okonet/lint-staged#configuration <br />
 # scripts =
-"precommit": "lint-staged" <br />
+"precommit:staged": "lint-staged" <br />
 
 
 # use for the first time on an old set of code
