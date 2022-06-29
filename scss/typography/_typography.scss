@@ -1,0 +1,65 @@
+//sass extend to copy out heading settings, different from @mixin, it copies code to apply to all
+//%heading {
+//  font-family: $font-display; //used for all of headings
+//  font-weight: 400;
+//}
+//heading-1 {
+//  @extend %heading; //extender VARIABLE
+// &--light { color: $color-grey-light-1; } //modifer for coloring - need to add to html
+//  &--dark { color: $color-grey-dark-1; } //modifer for coloring - need to add to html
+// %heading {
+//   font-family: $font-display-1; //used for all of headings
+//   font-weight: 400;
+// }
+// .heading-primary {
+//     text-transform: uppercase;
+//     font-size: 7rem;
+//     text-align: center;
+// }
+// .heading-secondary {
+//   @extend %heading; //extender VARIABLE
+//   font-size: 3rem;
+//   font-style: italic;
+//   line-height: 1;
+//   text-align: center;
+//   &--light { color: $color-grey-light-1; } //modifer for coloring - need to add to html
+//   &--dark { color: $color-grey-dark-1; } //modifer for coloring - need to add to html
+// }
+// .heading-tertiary {
+//   @extend %heading; //extender VARIABLE
+//     font-size: 1.6rem;
+//     color: $color-tertiary;
+//     text-transform: uppercase;
+//     text-align: center;
+// }
+// .svg-wrapper {
+//     position: relative;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     margin: auto;
+//     max-width: 100%;
+// }
+// .shape {
+//     // stroke-dasharray: 140 540;
+//     // stroke-dashoffset: -474;
+//     position: relative;
+//     stroke-width: 8px;
+//     fill: transparent;
+//     stroke: #19f6e8;
+//     border-bottom: 5px solid black;
+//     transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
+// }
+// .text {
+//     font-family: 'Roboto Condensed';
+//     font-size: 22px;
+//     line-height: 32px;
+//     letter-spacing: 8px;
+//     color: #fff;
+//     top: -48px;
+//     position: relative;
+// }
+// .svg-wrapper:hover .shape {
+//     stroke-width: 2px;
+//     stroke-dashoffset: 0;
+//     stroke-dasharray: 760;
+// }

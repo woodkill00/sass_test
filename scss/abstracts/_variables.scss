@@ -1,0 +1,217 @@
+/// COLORS
+// $color-primary: rgb(85, 197, 122);
+// $color-primary-light: rgb(126, 213, 111);
+// $color-primary-dark: rgb(40, 180, 133);
+
+// $color-secondary-light: rgb(255, 185, 0);
+// $color-secondary-dark: rgb(255, 119, 48);
+
+// $color-tertiary-light: rgb(41, 152, 255);
+// $color-tertiary-dark: #5643fa;
+
+$color-grey: rgb(128, 128, 128);
+$color-grey-light-1: rgb(153, 153, 153);
+$color-grey-light-2: rgb(173, 173, 173);
+$color-grey-light-2: rgb(194, 194, 194);
+$color-grey-dark: rgb(112, 112, 112);
+$color-grey-dark-2: rgb(92, 92, 92);
+$color-grey-dark-3: rgb(71, 71, 71);
+$color-grey-gradient: to right, rgba(128, 128, 128, .85), rgba(128, 128, 128, .85);
+
+$color-white: rgba(255, 255, 255, 1);
+$color-white-dark-1: rgba(235, 235, 235, 1);
+$color-white-dark-2: rgba(214, 214, 214, 1);
+$color-white-gradient: to right, rgba(255, 255, 255, .85), rgba(255, 255, 255, .85);
+
+$color-black: rgba(0, 0, 0, 1);
+$color-black-light-1: rgba(20, 20, 20, 1);
+$color-black-light-2: rgba(41, 41, 41, 1);
+$color-black-gradient: to right, rgba(0, 0, 0, .85), rgba(0, 0, 0, .85);
+
+// $color-one: rgba(111, 0, 255, 1);
+// $color-one-gradient: to right, rgba(111, 0, 255, .85), rgba(111, 0, 255, .85);
+
+// $color-two: rgba(0, 89, 255, 1);
+// $color-two-gradient: to right, rgba(0, 89, 255, .85), rgba(0, 89, 255, .85);
+
+// $color-three: rgba(0, 220, 29, 1);
+// $color-three-gradient: to right, rgba(0, 220, 29, .85), rgba(0, 220, 29, .85);
+
+// $color-four: rgba(255, 299, 0, 1);
+// $color-four-gradient: to right, rgba(255, 299, 0, .85), rgba(255, 299, 0, .85);
+
+// $color-five: rgba(255, 119, 0, 1);
+// $color-five-gradient: to right, rgba(255, 119, 0, .85), rgba(255, 119, 0, .85);
+
+// $color-six: rgba(234, 47, 134, 1);
+// $color-six-gradient: to right, rgba(234, 47, 134, .85), rgba(234, 47, 134, .85);
+
+$color-jj-one: rgb(224, 22, 22);
+$color-jj-one-gradient: to right, rgba(224, 22, 22, .85), rgba(224, 22, 22, .85);
+
+$color-jj-two: rgb(249, 221, 29);
+$color-jj-two-gradient: to right, rgba(249, 221, 29, .85), rgba(249, 221, 29, .85);
+
+$color-jj-three: rgb(161, 168, 171);
+$color-jj-three-gradient: to right, rgba(161, 168, 171, .85), rgba(161, 168, 171, .85);
+
+$color-jj-four: rgb(238, 34, 12);
+$color-jj-four-gradient: to right, rgba(238, 34, 12, .85), rgba(238, 34, 12, .85);
+
+// $color-glass-black: to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1);
+// $color-glass-white: to right bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1);
+
+
+// CUSTOM THEMES
+$custom-theme-colors: (
+    "jj_one": rgb(224, 22, 22),
+    "jj_one_light": rgb(235, 51, 51),
+    "jj_one_dark": rgb(186, 18, 18),
+    "jj_two": rgb(249, 221, 29),
+    "jj_two_light": rgb(250, 227, 76),
+    "jj_two_dark": rgb(239, 208, 6),
+    "jj_three": rgb(161, 168, 171),
+    "jj_three_light": rgb(190, 195, 197),
+    "jj_three_dark": rgb(147, 156, 159),
+    "jj_four": rgb(238, 34, 12),
+    "jj_four_light": rgb(245, 80, 61),
+    "jj_four_dark": rgb(213, 31, 11),
+    "jj_old1": rgb(242, 228, 201),
+    "jj_old1_light": rgb(251, 247, 239),
+    "jj_old1_dark": rgb(235, 214, 173),
+    "jj_old2": rgb(122, 5, 17),
+    "jj_old2_light": rgb(176, 7, 24),
+    "jj_old2_dark": rgb(98, 4, 13),
+    "jj_old3": rgb(0, 44, 64),
+    "jj_old3_light": rgb(0, 84, 122),
+    "jj_old3_dark": rgb(0, 28, 41),
+    "jj_old4": rgb(16, 75, 101),
+    "jj_old4_light": rgb(22, 105, 141),
+    "jj_old4_dark": rgb(11, 53, 71),
+    "jj_old5": rgb(173, 131, 34),
+    "jj_old5_light": rgb(215, 165, 51),
+    "jj_old5_dark": rgb(153, 116, 30),
+    "jj_old6": rgb(30, 57, 26),
+    "jj_old6_light": rgb(45, 84, 39),
+    "jj_old6_dark": rgb(15, 28, 13),
+    "jj_old7": rgb(78, 64, 56),
+    "jj_old7_light": rgb(106, 88, 77),
+    "jj_old7_dark": rgb(59, 49, 43),
+    "jj_old8": rgb(55, 25, 51),
+    "jj_old8_light": rgb(84, 38, 78),
+    "jj_old8_dark": rgb(28, 13, 26),
+    "ffm_1": rgb(185, 74, 120),
+    "ffm_1_light": rgb(198, 108, 146),
+    "ffm_1_dark": rgb(162, 63, 104),
+    "ffm_2": rgb(232, 151, 113),
+    "ffm_2_light": rgb(238, 178, 150),
+    "ffm_2_dark": rgb(226, 126, 80),
+    "ffm_3": rgb(220, 191, 125),
+    "ffm_3_light": rgb(229, 208, 158),
+    "ffm_3_dark": rgb(212, 177, 94),
+    "ffm_4": rgb(136, 212, 163),
+    "ffm_4_light": rgb(165, 223, 185),
+    "ffm_4_dark": rgb(105, 201, 139),
+    "ffm_5": rgb(76, 165, 166),
+    "ffm_5_light": rgb(101, 183, 184),
+    "ffm_5_dark": rgb(64, 138, 140),
+    "ffm_6": rgb(100, 143, 157),
+    "ffm_6_light": rgb(130, 165, 176),
+    "ffm_6_dark": rgb(86, 125, 138),
+    "ffm_7": rgb(128, 101, 146),
+    "ffm_7_light": rgb(147, 123, 163),
+    "ffm_7_dark": rgb(106, 84, 120),
+);
+
+// CUSTOM TABLE VARIANTS
+$custom-table-variants: $custom-theme-colors;
+
+// CUSTOM UTILITIES
+$custom-utilities-text-colors: $custom-theme-colors;
+$custom-utilities-bg-colors: $custom-theme-colors;
+
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Dancing+Script:wght@400;500;600;700&family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// FONT
+$default-font-size: 1.6rem;
+// FONT VARIABLES - need to be included with google fonts in html.index
+$font-primary: "Open Sans",
+sans-serif;
+$font-secondary: "Roboto",
+sans-serif;
+// $font-display: 'Josefin Sans', sans-serif;
+$font-display-1: "Open Sans",
+sans-serif;
+$font-menu-1: "Dancing Script",
+cursive;
+$jj-font-1: "Cinzel",
+"Trajan Pro", "Open Sans";
+$jj-font-1: "Libre Franklin",
+"Franklin Gothic Book", "Open Sans";
+.override-text {
+    text-transform: none !important;
+}
+
+// Telephone Icon
+a[href^="tel:"]:before {
+    content: "\260E";
+}
+
+
+
+.transR {
+    transform: translateX(8rem);
+}
+
+// LIST STYLE
+.list-none {
+    list-style: none !important;
+}
+
+// HEADINGS
+.menus__heading {
+    transform: translateY(1rem);
+}
+
+.sub__options {
+    font-size: 1rem;
+    font-family: $font-primary;
+    font-style: italic;
+    font-variant: bold;
+}
+
+// MARGIN OUTPUTS VARIABLES
+.mb-sm {
+    margin-bottom: 2rem;
+}
+
+.mb-md {
+    margin-bottom: 3rem;
+}
+
+.mb-lg {
+    margin-bottom: 4rem;
+}
+
+.mb-hg {
+    margin-bottom: 8rem;
+}
+
+// //RESPONSIVE BREAKPOINTS VARIABLES
+// $bp-full: 123.75em; //1980px 1980/16px
+// $bp-largest: 75em; // 1200px 1200/16px
+// $bp-large: 65em; // 1050px 1050/16px
+// $bp-medium2: 51em; // 845px 845/16px
+// $bp-medium: 50em; // 800px 800/16px
+// $bp-small: 35em; // 700px 700/16px
+// $bp-smaller: 34em; // 550px 550/16px
+// $bp-phone: 20em; // 320px 320/16px
+// $bp-micro: 17em; // 272px 272/16px = Apple Watch
+// // TO USE RESPONSIVE BREAKPOINTS VARIABLES-
+// // @media only screen and (max-width: $bp-large)
+// // GRID
+// $grid-width: 114rem;
+// $gutter-vertical: 8rem;
+// $gutter-vertical-small: 6rem; // to help media query to change gutter size
+// $gutter-horizontal: 6rem;

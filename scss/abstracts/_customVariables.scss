@@ -1,0 +1,115 @@
+.spacer {
+    height: 20vh;
+}
+
+.announcement {
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+
+.displayNone {
+    display: none;
+}
+
+.linksplit {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+}
+
+//     &.open {
+//         position: fixed;
+//         opacity: 100;
+//         pointer-events: all;
+//
+//
+//     }
+//
+//         pointer-events: none;
+// cursor: pointer;
+//         content: "";
+//         /* background: black; */
+//         position: absolute;
+//         bottom: 0;
+//         left: 20%;
+//         height: 100%;
+//         width: 0.5%;
+//         animation: backgroundColor 10s ease infinite;
+//         -webkit-animation: backgroundColor 10s ease infinite;
+//         -moz-animation: backgroundColor 10s ease infinite;
+//         -ms-animation: backgroundColor 10s ease infinite;
+//         -o-animation: backgroundColor 10s ease infinite;
+//     }
+//
+// .tooltip {
+//     position: relative;
+//     display: inline-block;
+//     /* border-bottom: 1px dotted black; */
+//     /* If you want dots under the hoverable text */
+// }
+// /* Tooltip text */
+// .tooltip .tooltiptext {
+//     visibility: hidden;
+//     width: 100px;
+//     background-color: transparent;
+//     color: #fff;
+//     text-align: left;
+//     padding: 0px 0;
+//     border-radius: 6px;
+//     /*Positionthetooltiptext-seeexamplesbelow!*/
+//     position: absolute;
+//     z-index: 1;
+//     transform: translate(-25px, -25px);
+//     -webkit-transform: translate(-25px, -25px);
+//     -moz-transform: translate(-25px, -25px);
+//     -ms-transform: translate(-25px, -25px);
+//     -o-transform: translate(-25px, -25px);
+// }
+// /* Show the tooltip text when you mouse over the tooltip container */
+// .tooltip:hover .tooltiptext {
+//     visibility: visible;
+// }
+//             & li {
+//                 transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+//                 transition: background 0.25s ease-in, box-shadow 0.15s;
+//                 -webkit-transition: background 0.25s ease-in, box-shadow 0.15s;
+//                 -moz-transition: background 0.25s ease-in, box-shadow 0.15s;
+//                 -ms-transition: background 0.25s ease-in, box-shadow 0.15s;
+//                 -o-transition: background 0.25s ease-in, box-shadow 0.15s;
+//                 color: $color-white;
+//
+//         &.open {
+//             box-shadow: 0.1rem 0.9rem 3rem 0.1rem white;
+//             animation-name: theme__boxShadow;
+//             animation-duration: 10s;
+//             animation-timing-function: ease-in-out;
+//             animation-iteration-count: infinite;
+//             -webkit-animation-name: theme__boxShadow;
+//             -webkit-animation-duration: 10s;
+//             -webkit-animation-timing-function: ease-in-out;
+//             -webkit-animation-iteration-count: infinite;
+//             -moz-animation-name: theme__boxShadow;
+//             -moz-animation-duration: 10s;
+//             -moz-animation-timing-function: ease-in-out;
+//             -moz-animation-iteration-count: infinite;
+//         }
+.hero {
+    margin-bottom: 2rem;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    & img {
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+        opacity: 80%;
+    }
+}
+
+.block-content {
+    height: 100vh;
+    width: 100%;
+    color: $color-off-white;
+    text-align: center;
+}

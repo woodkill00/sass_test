@@ -1,0 +1,97 @@
+
+.home__content {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 75% 5% 5% 5% 5% 5%;
+    grid-template-rows: 1fr;
+    max-width: 100%;
+    min-width: 100%;
+    transition: all .2s ease-in-out;
+
+    &__section {
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        & div {
+            align-content: center;
+            height: 100vh;
+            width: 100%;
+            border: .1rem solid $color-black;
+            vertical-align: middle;
+            background-repeat:
+              no-repeat,
+              no-repeat,
+              no-repeat;
+            background-position:
+              right,
+              center,
+              left;
+
+            & span {
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                text-align: center;
+                vertical-align: middle;
+                color: $color-white;
+                height: 100%;
+                width: 100%;
+                text-transform: uppercase;
+                font-size: .5rem;
+                letter-spacing: 2rem;
+
+                @include respond(big-desktop) {
+                    font-size: 3rem;
+                    letter-spacing: 4.5rem;
+                }
+
+                @include respond(tab-port) {
+                    font-size: 2rem;
+                    letter-spacing: 4rem;
+                }
+            }
+        }
+
+        &-1 div {
+            background-image:
+            linear-gradient($color-one-gradient),
+            url('../img/flower_of_life_transparent.svg'),
+            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><linearGradient id='gradient'><stop offset='0%' stop-color='%236F00FF'/><stop offset='0%' stop-color='%236F00FF'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+        }
+        &-2 div {
+            background-image:
+            linear-gradient($color-two-gradient),
+            url('../img/merkabah_transparent.svg'),
+            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><linearGradient id='gradient'><stop offset='0%' stop-color='%230059ffff'/><stop offset='0%' stop-color='%230059ffff'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+        }
+        &-3 div {
+            background-image:
+            linear-gradient($color-three-gradient),
+            url('../img/fibonacci_transparent_2.svg'),
+            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><linearGradient id='gradient'><stop offset='0%' stop-color='%2300dc1dff'/><stop offset='0%' stop-color='%2300dc1dff'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+        }
+        &-4 div {
+            background-image:
+            linear-gradient($color-four-gradient),
+            url('../img/torus_transparent.svg'),
+            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><linearGradient id='gradient'><stop offset='0%' stop-color='%23ffe500ff'/><stop offset='0%' stop-color='%23ffe500ff'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+        }
+        &-5 div {
+            background-image:
+            linear-gradient($color-five-gradient),
+            url('../img/metatrons_cube_transparent.svg'),
+            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><linearGradient id='gradient'><stop offset='0%' stop-color='%23ff8c00ff'/><stop offset='0%' stop-color='%23ff8c00ff'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+        }
+        &-6 div {
+            background-image:
+            linear-gradient($color-six-gradient),
+            url('../img/hamsa_transparent_3.svg'),
+            url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'><linearGradient id='gradient'><stop offset='0%' stop-color='%23ea2f86ff'/><stop offset='0%' stop-color='%23ea2f86ff'/> </linearGradient><rect fill='url(%23gradient)' x='0' y='0' width='100%' height='100%'/></svg>");
+        }
+    }
+}
+.shown:hover {
+    transform: none;
+}

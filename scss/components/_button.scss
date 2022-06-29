@@ -1,0 +1,99 @@
+.btn {
+    // to apply to btn as well as the link/visited class a tags have
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 10rem;
+        //transition: all .2s;
+        transition: all 0.2s;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -ms-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        /*--secondaminationtransitionmustbeontheactivestatetobeappliedtoallthealtstatestomaketheanimationwork.--*/
+        position: relative;
+        font-size: $default-font-size;
+        //Changeforthe<button>elementborder: none;
+        cursor: pointer;
+        animation: textColor 10s ease infinite;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-white, 0.2);
+        &::after {
+            // transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    &:active,
+    &:focus {
+        //to make the focus element look just like active
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-white, 0.2);
+    }
+    &--black {
+        background-color: $color-black;
+        color: $color-white;
+        &::after {
+            background-color: $color-black;
+        }
+    }
+    // &--green {
+    //     background-color: $color-primary;
+    //     color: $color-white;
+    //     &::after {
+    //         background-color: $color-primary;
+    //     }
+    // }
+    /*-- after needs :: 2 of these --*/
+    &::after {
+        /*-- add element behind btn then hover into it,
+      needs content: (can even be empty), display: treated like child of btn --*/
+        content: "";
+        display: inline-block;
+        background-color: $color-black;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+    }
+    &--animated {
+        animation: moveInBottom2 0.5s ease-out 0.75s;
+        animation-fill-mode: backwards;
+        /*-- setting to backwards applys the animations before they start --*/
+    }
+}
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: $default-font-size;
+        color: $color-white;
+        background-color: $color-black;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-white;
+        padding: 3px;
+        transition: all 0.2s;
+    }
+    &:hover {
+        background-color: $color-black;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+        transform: translateY(-2px);
+    }
+    &:active {
+        background-color: $color-black;
+        box-shadow: 0 0.5rem 1rem rgba($color-white, 0.15);
+        transform: translateY(0);
+    }
+}

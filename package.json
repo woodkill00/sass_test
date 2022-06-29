@@ -1,0 +1,79 @@
+{
+  "name": "sass_test",
+  "version": "1.0.0",
+  "description": "basic html setup for testing sass",
+  "main": "index.js",
+  "homepage": "https://github.com/woodkill00/sass_test#readme",
+  "author": {
+    "name": "WoodKill",
+    "email": "thejunkmailvoid@gmail.com",
+    "url": "https://www.woodkill.com"
+  },
+  "contributors": [
+    {
+      "name": "WoodKill",
+      "email": "thejunkmailvoid@gmail.com",
+      "url": "https://www.woodkill.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/woodkill00/sass_test/issues",
+    "email": "thejunkmailvoid@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woodkill00/sass_test.git"
+  },
+  "license": "ISC",
+  "private": true,
+  "keywords": [
+    "svg",
+    "html",
+    "scss",
+    "javascript",
+    "testing"
+  ],
+  "scripts": {
+    "watch:dev:sass": "sass --charset --color  --no-indented --no-error-css --no-source-map --poll --trace --update --verbose --watch scss/main.scss css/style.dev.css",
+    "watch:dev:sass:in-css-error": "sass --charset --color --error-css  --no-indented --no-source-map --poll --trace --update --verbose --watch scss/main.scss css/style.dev.css",
+    "watch:dev:sass:interactive": "sass --charset --color --error-css --interactive --trace --verbose scss/main.scss css/style.dev.css",
+    "watch:sass": "sass  --embed-source-map  --no-indented --watch scss/main.scss css/style.css",
+    "compile:sass": "sass --embed-sources --embed-source-map --no-error-css --style=compressed scss/main.scss css/style.comp.css",
+    "remove:comments": "postcss css/style.comp.css --use postcss-discard-comments -o  css/style.uncomment.css",
+    "prefix:css": "postcss css/style.uncomment.css --use autoprefixer -o css/style.prefix.css",
+    "compress:css": "sass --no-error-css --style=compressed css/style.prefix.css css/style.min.css ",
+    "dev-server": "live-server --port=5500 --browser=firefox",
+    "start": "npm-run-all --parallel dev-server watch:sass",
+    "build:css": "npm-run-all compile:sass remove:comments prefix:css compress:css",
+    "postwatch:sass": "npm-run-all compile:sass prefix:css compress:css",
+    "precommit:staged": "lint-staged"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^5.1.3",
+    "eslint-config-prettier": "^8.5.0",
+    "fs-extra": "^10.1.0",
+    "lint-staged": "^13.0.3",
+    "log-process-errors": "^9.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-discard-comments": "^5.1.2",
+    "sass": "^1.52.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "errorlog": "^1.4.7",
+    "gsap": "^3.10.4",
+    "jquery": "^3.6.0",
+    "latest-version": "^7.0.0"
+  },
+  "engines": {
+    "nvm": "^0.39.1",
+    "node": "^16.15.1",
+    "npm": "^8.13.1"
+  },
+  "os": [
+    "linux"
+  ]
+}

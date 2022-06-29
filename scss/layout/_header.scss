@@ -1,0 +1,78 @@
+.header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    align-content: center;
+}
+
+.header__section1 {
+    // grid-column: 1 / 13;
+    align-self: center;
+    &-text {
+        grid-column: 1 / 13;
+        font-family: "Roboto Condensed";
+        font-size: 2.2rem;
+        line-height: 32px;
+        letter-spacing: 5px;
+        color: #fff;
+        // top: -48px;
+        // position: relative;
+        animation: textColor 10s ease infinite;
+        -webkit-animation: textColor 10s ease infinite;
+        -moz-animation: textColor 10s ease infinite;
+        -ms-animation: textColor 10s ease infinite;
+        -o-animation: textColor 10s ease infinite;
+        &1 {
+            animation-name: moveInTop2;
+            animation-duration: 2s;
+            animation-timing-function: ease-out;
+        }
+        &2 {
+            animation-name: moveInTop2;
+            animation-duration: 3s;
+            animation-timing-function: ease-out;
+        }
+        &3 {
+            animation-name: moveInTop2;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
+        }
+        &4 {
+            animation-name: moveInTop2;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+        }
+        &5 {
+            animation-name: moveInTop2;
+            animation-duration: 6s;
+            animation-timing-function: ease-out;
+        }
+        &6 {
+            animation-name: moveInTop2;
+            animation-duration: 7s;
+            animation-timing-function: ease-out;
+        }
+        &7 {
+            animation-name: moveInTop2;
+            animation-duration: 8s;
+            animation-timing-function: ease-out;
+        }
+        &8 {
+            animation-name: moveInTop2;
+            animation-duration: 9s;
+            animation-timing-function: ease-out;
+        }
+    }
+}
+
+.header__section2 {
+    padding: 2rem;
+    max-width: 100%;
+    align-self: start;
+}
+
+// animation-name: moveInLeft;
+//     animation-duration: 1s;
+//     animation-timing-function: ease-out;

@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+// custom variables
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
+
+// $primary:   #c29938;
+// import bootstrap
+//   // "primary": #0074d9,
+//   // "danger": #ff4136,
+
+
+.text-responsive {
+    font-size: calc(100% + 1vw + 1vh);
+}
+
+$enable-cssgrid:    false !default;
+// $enable-shadows:    false !default;
+// $enable-gradients:  false !default;
+
+// scss-docs-start grid-breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+// scss-docs-end grid-breakpoints
+
+//
+// LINKS
+// $link-color:                              $primary !default;
+$link-decoration:                         underline !default;
+$link-shade-percentage:                   20% !default;
+// $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-decoration:                   null !default;
+$stretched-link-pseudo-element:           after !default;
+$stretched-link-z-index:                  1 !default;
+
+
+
+
+
+
+
+
+//how to link sub-files/dependencies to be pulled in
+@import "abstracts/mixins";
+@import "abstracts/variables";
+// @import "base/base";
+// @import "animations/animations-back-glow";
+// @import "animations/animations";
+// @import "components/button-double-border-animation";
+// @import "components/button";
+// @import "components/components";
+// @import "components/comingSoon";
+// @import "components/glass";
+// @import "layout/footer";
+// @import "layout/header";
+// @import "layout/home";
+// @import "layout/main";
+// @import "layout/navbar";
+// @import "layout/sidebar";
+// @import "typography/typography";
+// @import "typography/style_base";
+// @import "abstracts/customVariables";
+// @import "node_modules/bootstrap/scss/bootstrap";
+
+
+
+// $body-bg: $color-black;
+// $body-color:    $gray-900 !default;
+
+// test
+
+// import functions & variables
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+@import "abstracts/bootstrapVariablesMerge";
+
+
+// :export {
+//   // primaryColor: $primary-color;
+//   // backgroundColor: $background-color;
+//   colorJJOne: $color-jj-one;
+//   colorJJTwo: $color-jj-two;
+//   colorJJThree: $color-jj-three;
+//   colorJJFour: $color-jj-four;
+//   colorJJFive: $color-jj-five;
+//   colorJJSix: $color-jj-six;
+// }
+
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

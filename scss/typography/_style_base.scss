@@ -1,0 +1,25 @@
+::selection {  // change for selection of when the user selects text
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+// a normal, unvisited link
+a:link {
+    // color: $color-white;
+    text-decoration: none;
+}
+// a link the user has visited
+a:visited {
+    color: purple;
+    text-decoration: dashed;
+
+}
+// a link when the user mouses over it
+a:hover {
+    color: limegreen;
+
+}
+// a link the moment it is clicked
+// a:active {
+
+// }

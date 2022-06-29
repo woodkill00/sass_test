@@ -1,0 +1,224 @@
+
+
+.sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .15fr 10fr 1fr;
+
+    &.open {
+        width: 100vw;
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        z-index: 100;
+
+        @include respond(big-desktop) {
+            width: 35vw;
+        }
+
+        @include respond(tab-port) {
+            width: 50vw;
+
+            & .sidebar__btn {
+                font-size: 2.5rem;
+            }
+        }
+
+        & .sidebar__icon {
+            display: contents;
+        }
+
+        & .sidebar__logo_name {
+            display: contents;
+        }
+
+        & .sidebar__search {
+            display: grid;
+            grid-template-columns: .25fr 2fr;
+            grid-template-rows: 1fr;
+
+            &__input {
+                display: grid;
+                width: 90%;
+            }
+        }
+
+        & .sidebar__nav__list li {
+            margin: .5rem 2rem;
+            width: 70%;
+
+            & a {
+                padding-left: 1rem;
+                display: grid;
+                grid-template-columns: .2fr 1fr;
+                grid-template-rows: 1fr;
+                justify-items: start;
+
+                & * {
+                    padding-bottom: .5rem;
+                }
+
+                // & i {
+                //     font-size: 1rem;
+                // }
+            }
+        }
+
+        & .sidebar__links__name {
+            display: contents;
+            grid-column: 2 / -1;
+        }
+    }
+
+    @include respond(big-desktop) {
+        &__btn {
+            font-size: 2.5rem;
+        }
+        &__icon {
+            font-size: 2.5rem;
+        }
+        &__logo__name {
+            font-size: 2.5rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        &__btn {
+            font-size: 2.5rem;
+        }
+        &__icon {
+            font-size: 2.5rem;
+        }
+        &__logo__name {
+            font-size: 1.5rem;
+        }
+    }
+
+    &__menu {
+        margin: .5rem .5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.open {
+            justify-content: space-between;
+        }
+    }
+
+    &__btn {
+        font-size: 1.5rem;
+        color: white;
+    }
+
+    &__icon {
+        display: none;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    &__logo_name {
+        display: none;
+        align-self: center;
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    &__search {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+
+        &__btn {
+            justify-self: center;
+            align-self: center;
+        }
+
+        &__input {
+            border: none;
+            display: none;
+            left: 1rem;
+        }
+    }
+
+    &__nav__list {
+        padding-left: 0;
+        margin-bottom: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(2.5rem, 1fr));
+
+        & li {
+            list-style-type: none;
+            margin: .5rem .5rem;
+            background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.1));
+            border-radius: 10rem;
+
+            & a {
+                text-decoration: none;
+                padding-top: .2rem;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+                justify-items: center;
+
+                & i {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    &__links__name {
+        display: none;
+    }
+}
+
+.line__above {
+    margin-bottom: .5rem;
+
+    &::before {
+        content: '';
+        border-top: .2rem solid $color-black;
+        height: .5rem;
+        animation-name: theme__border;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: theme__border;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-name: theme__border;
+        -moz-animation-duration: 10s;
+        -moz-animation-timing-function: ease-in-out;
+        -moz-animation-iteration-count: infinite;
+    }
+}
+
+.line__below {
+    margin-bottom: .5rem;
+
+    &::after {
+        content: '';
+        border-bottom: .2rem solid $color-black;
+        height: .5rem;
+        animation-name: theme__border;
+        animation-duration: 10s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: theme__border;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-timing-function: ease-in-out;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-name: theme__border;
+        -moz-animation-duration: 10s;
+        -moz-animation-timing-function: ease-in-out;
+        -moz-animation-iteration-count: infinite;
+    }
+}

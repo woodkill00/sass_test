@@ -1,0 +1,249 @@
+/*-- animations (2 types
+- transition, then change properties-----
+make postion from start 0, to end 100 add in others in between
+)--*/
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+    80% {
+        transform: translateX(-1rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom2 {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+        -webkit-transform: translateY(15rem);
+        -moz-transform: translateY(15rem);
+        -ms-transform: translateY(15rem);
+        -o-transform: translateY(15rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-3rem);
+        -webkit-transform: translateY(-3rem);
+        -moz-transform: translateY(-3rem);
+        -ms-transform: translateY(-3rem);
+        -o-transform: translateY(-3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInTop2 {
+    0% {
+        opacity: 0;
+        transform: translateY(-15rem);
+        -webkit-transform: translateY(-15rem);
+        -moz-transform: translateY(-15rem);
+        -ms-transform: translateY(-15rem);
+        -o-transform: translateY(-15rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.theme__textColor {
+    animation: textColor 10s ease infinite;
+    -webkit-animation: textColor 10s ease infinite;
+    -moz-animation: textColor 10s ease infinite;
+    -ms-animation: textColor 10s ease infinite;
+    -o-animation: textColor 10s ease infinite;
+}
+
+.theme__bgColor {
+    animation: backgroundColor 10s ease infinite;
+    -webkit-animation: backgroundColor 10s ease infinite;
+    -moz-animation: backgroundColor 10s ease infinite;
+    -ms-animation: backgroundColor 10s ease infinite;
+    -o-animation: backgroundColor 10s ease infinite;
+    -webkit-animation: backgroundColor 10s ease infinite;
+}
+
+@keyframes theme__border {
+    0% {
+        border-color: rgb(0, 0, 184);
+    }
+    50% {
+        border-color: #00aeff;
+    }
+    100% {
+        border-color: rgb(0, 0, 184);
+    }
+}
+
+@-webkit-keyframes theme__border {
+    0% {
+        border-color: rgb(0, 0, 184);
+    }
+    50% {
+        border-color: #00aeff;
+    }
+    100% {
+        border-color: rgb(0, 0, 184);
+    }
+}
+
+@-moz-keyframes theme__border {
+    0% {
+        border-color: rgb(0, 0, 184);
+    }
+    50% {
+        border-color: #00aeff;
+    }
+    100% {
+        border-color: rgb(0, 0, 184);
+    }
+}
+
+@keyframes theme__boxShadow {
+    0% {
+        box-shadow: 0rem 2rem 3rem -1.7rem rgb(0, 0, 184);
+    }
+    50% {
+        box-shadow: 0rem 2rem 3rem -1.7rem #00aeff;
+    }
+    100% {
+        box-shadow: 0rem 2rem 3rem -1.7rem rgb(0, 0, 184);
+    }
+}
+
+@-webkit-keyframes theme__boxShadow {
+    0% {
+        box-shadow: 0rem 2rem 3rem -1.7rem rgb(0, 0, 184);
+    }
+    50% {
+        box-shadow: 0rem 2rem 3rem -1.7rem #00aeff;
+    }
+    100% {
+        box-shadow: 0rem 2rem 3rem -1.7rem rgb(0, 0, 184);
+    }
+}
+
+@-moz-keyframes theme__boxShadow {
+    0% {
+        box-shadow: 0rem 2rem 3rem -1.7rem rgb(0, 0, 184);
+    }
+    50% {
+        box-shadow: 0rem 2rem 3rem -1.7rem #00aeff;
+    }
+    100% {
+        box-shadow: 0rem 2rem 3rem -1.7rem rgb(0, 0, 184);
+    }
+}
+
+@keyframes backgroundColor {
+    0% {
+        background: rgb(0, 0, 184);
+    }
+    50% {
+        background: #00aeff;
+    }
+    100% {
+        background: rgb(0, 0, 184);
+    }
+}
+
+@-webkit-keyframes backgroundColor {
+    0% {
+        background: rgb(0, 0, 184);
+    }
+    50% {
+        background: #00aeff;
+    }
+    100% {
+        background: rgb(0, 0, 184);
+    }
+}
+
+@-moz-keyframes backgroundColor {
+    0% {
+        background: rgb(0, 0, 184);
+    }
+    50% {
+        background: #00aeff;
+    }
+    100% {
+        background: rgb(0, 0, 184);
+    }
+}
+
+@keyframes textColor {
+    0% {
+        color: rgb(0, 0, 184);
+    }
+    50% {
+        color: #00aeff;
+    }
+    100% {
+        color: rgb(0, 0, 184);
+    }
+}
+
+@-webkit-keyframes textColor {
+    0% {
+        color: rgb(0, 0, 184);
+    }
+    50% {
+        color: #00aeff;
+    }
+    100% {
+        color: rgb(0, 0, 184);
+    }
+}
+
+@-moz-keyframes textColor {
+    0% {
+        color: rgb(0, 0, 184);
+    }
+    50% {
+        color: #00aeff;
+    }
+    100% {
+        color: rgb(0, 0, 184);
+    }
+}
