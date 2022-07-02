@@ -1,66 +1,86 @@
 # SASS TEST
-# *** Info for start ***
-mkdir project_name=sass_test <br />
-cd $project_name <br />
+## Info For Start
 
-# GIT ***
-git clone https://github.com/woodkill00/sass_test.git . <br />
-# *** GIT
+### Basic Commands
 
-# VENV ***
-python3 -m venv venv <br />
-source venv/bin/activate <br />
-# *** VENV
+-   Make project container folder, use this command:
 
-# PIP ***
-python3 -m pip install --upgrade pip <br />
-pip install -r requirements.txt <br />
-# *** PIP
+        mkdir <containerFolderName>
 
-# GIT UPDATE***
+-   Move to project container folder, use this command:
 
-# *** GIT UPDATE
+        cd <containerFolderName>
 
-# NVM***
-nvm: node version manager <br />
-https://github.com/nvm-sh/nvm <br />
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash <br />
+-   Install repo, use this command:
 
-# nvm syntax:
-nodeVersion=16.15.1 <br />
-nvm install $version <br />
-nvm use version-number <br />
-nvm ls <br />
+        git clone https://github.com/woodkill00/sass_test.git .
 
-# NPM latest version
-nvm install-latest-npm <br />
-# ***NVM
+-   Make Virtual Environment, use this command:
 
+        python3 -m venv venv
 
+-   Activate Virtual Environment, use this command:
 
-# NPM ***
-Logging = https://docs.npmjs.com/cli/v8/using-npm/logging <br />
-Error logging = https://www.npmjs.com/package/errorlog <br />
-https://www.npmjs.com/package/log-process-errors <br />
-npm install -D log-process-errors <br />
+        source venv/bin/activate
 
-# syntax =
-packageName=postcss <br />
-npm install $packageName --save-dev <br />
-npm audit fix <br />
+-   Upgrade pip, use this command:
 
-# lint-staged.config.js
-https://github.com/okonet/lint-staged#configuration <br />
-# scripts =
-"precommit:staged": "lint-staged" <br />
+        python3 -m pip install --upgrade pip
+
+-   Install local requirements, use this command:
+
+        pip install -r requirements.txt
+
+### GIT UPDATE***
+-   Will add here
+
+        text here
+## NVM
+-   NVM Install **nvm: node version manager** `https://github.com/nvm-sh/nvm`
 
 
-# use for the first time on an old set of code
-https://medium.com/millennial-falcon-technology/reformatting-your-code-base-using-prettier-or-eslint-without-destroying-git-history-35052f3d853e <br />
-# *** NPM
+        curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+
+### NVM Syntax:
+-   
+        nodeVersion=16.15.1
+        nvm install $version
+        nvm use version-number
+        nvm ls
+
+## NPM Latest Version
+-   
+        nvm install-latest-npm
+
+### NPM Info
+-   Logging `https://docs.npmjs.com/cli/v8/using-npm/logging`
+
+-   Error logging `https://www.npmjs.com/package/errorlog`
+        
+        https://www.npmjs.com/package/log-process-errors
+        npm install -D log-process-errors
+
+### NPM Syntax
+-   
+        packageName=postcss
+        npm install $packageName --save-dev
+        npm audit fix
+
+### Lint Staged
+-   
+        lint-staged.config.js
+        https://github.com/okonet/lint-staged#configuration
+### Lint Staged Scripts
+-   
+        "precommit:staged": "lint-staged"
+
+
+### use for the first time on an old set of code
+`https://medium.com/millennial-falcon-technology/reformatting-your-code-base-using-prettier-or-eslint-without-destroying-git-history-35052f3d853e`
+
 
 
 # MIME TYPES
-https://developer.mozilla.org/en-US/docs/Learn/Server-side/Configuring_server_MIME_types <br />
+`https://developer.mozilla.org/en-US/docs/Learn/Server-side/Configuring_server_MIME_types`
 
 
