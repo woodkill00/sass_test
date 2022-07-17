@@ -15805,7 +15805,8 @@ a[href^="tel:"]:before {
 }
 
 .navbar-brand img {
-  width: 300px;
+  width: 200px;
+  height: 100px;
 }
 
 nav ul li a {
@@ -15897,4 +15898,48 @@ nav ul li a {
 }
 
 /******* Search Box End Here *******/
+.slider {
+  height: 80vh;
+}
+.slider .carousel-item img {
+  height: 80vh;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgb(224, 22, 22);
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5019607843);
+}
+.carousel-caption h5, .carousel-caption .h5 {
+  color: rgb(239, 208, 6);
+  font-size: 40px;
+  font-family: "Cinzel", "Trajan Pro", "Open Sans";
+  text-transform: uppercase;
+}
+.carousel-caption h4, .carousel-caption .h4 {
+  color: rgb(238, 34, 12);
+  font-size: 40px;
+  font-family: "Cinzel", "Trajan Pro", "Open Sans";
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
+}
+
 /******* MD.AL-AMIN code End Here *******/
