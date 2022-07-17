@@ -113,10 +113,8 @@ $stretched-link-z-index:                  1 !default;
 /******* MD.AL-AMIN code Start Here *******/ 
 @import "../scss/abstracts/variables";
 @import "../scss/layout/navbar";
-.account_dropdown.dropdown-menu[data-bs-popper] {
-  right: 0 !important;
-}
-// Search Box
+@import "../scss/components/swiperSlider";
+/******* Search Box Start Here *******/ 
 
 .search-box {
   position: relative;
@@ -174,6 +172,8 @@ $stretched-link-z-index:                  1 !default;
   height: 25px;
   padding: 0 7px;
 }
+
+/******* Search Box End Here *******/ 
 
 
 /******* MD.AL-AMIN code End Here *******/ 

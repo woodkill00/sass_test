@@ -19055,10 +19055,6 @@ nav ul li a {
   letter-spacing: 1px;
 }
 
-.account_dropdown.dropdown-menu[data-bs-popper] {
-  right: 0 !important;
-}
-
 .fa-chevron-down {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
@@ -19069,10 +19065,48 @@ nav ul li a {
   transform: rotate(180deg);
 }
 
-.account_dropdown.dropdown-menu[data-bs-popper] {
-  right: 0 !important;
+/******* Swiper Js Start Here *******/
+.slider {
+  position: relative;
+  height: 80vh;
 }
 
+:root {
+  --swiper-theme-color: rgb(186, 18, 18);
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../img/slide/slide_1.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/slide/slide_1.png);
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/******* Swiper Js End Here *******/
+/******* Search Box Start Here *******/
 .search-box {
   position: relative;
   top: 50%;
@@ -19131,5 +19165,6 @@ nav ul li a {
   padding: 0 7px;
 }
 
+/******* Search Box End Here *******/
 /******* MD.AL-AMIN code End Here *******/
 /*# sourceMappingURL=main.css.map */
