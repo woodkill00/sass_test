@@ -5,7 +5,7 @@
   }
 
 // custom variables
-$primary:       $pink !default;
+// $primary:       $pink !default;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
@@ -108,3 +108,72 @@ $stretched-link-z-index:                  1 !default;
 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+/******* MD.AL-AMIN code Start Here *******/ 
+@import "../scss/abstracts/variables";
+@import "../scss/layout/navbar";
+.account_dropdown.dropdown-menu[data-bs-popper] {
+  right: 0 !important;
+}
+// Search Box
+
+.search-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background: $color-jj_one_dark;
+  height: 25px;
+  border-radius: 50px;
+  padding: 0px;
+}
+
+.search-btn {
+  color: white;
+  float: right;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: $color-jj_one_dark;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.fa-search {
+  color: $color-white;
+  background: $color-jj_one_dark;
+  font-size: 16px;
+}
+
+.search-input {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 0;
+}
+
+.search-box:hover > .search-input {
+  width: 75px;
+  height: 25px;
+  padding: 0 7px;
+}
+
+
+/******* MD.AL-AMIN code End Here *******/ 
