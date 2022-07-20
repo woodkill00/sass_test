@@ -111,9 +111,13 @@ $stretched-link-z-index:                  1 !default;
 
 
 /******* MD.AL-AMIN code Start Here *******/ 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Libre+Franklin&display=swap');
 @import "../scss/abstracts/variables";
+@import "../scss/abstracts/mixins";
 @import "../scss/layout/navbar";
 @import "../scss/components/HomeSlider";
+@import "../scss/components/serviceSection";
+@import "../scss/layout/landingPage";
 
 
 /******* MD.AL-AMIN code End Here *******/ 

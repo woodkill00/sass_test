@@ -1,0 +1,14 @@
+.home_top{
+    background-color: $color-black;
+    p{
+        color: $color-white;
+        text-align: center;
+        font-size: .9rem;
+        font-family: $jj-font-2;
+    }
+}
+.home_right{
+    width: 100%;
+    height: 100%;
+    background-image: url("../../img/jesse/jpg/jesse-james-2.1920x1080.jpg");
+}

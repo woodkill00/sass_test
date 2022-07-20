@@ -63,3 +63,12 @@ only screen, media query only applies to screens, example... would not apply to 
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin  section_head {
+    color: $color-jj_one_dark;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $jj-font-1;
+    text-transform: uppercase;
+    text-align: center;
+}
