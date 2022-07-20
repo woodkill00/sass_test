@@ -56,7 +56,7 @@ $stretched-link-z-index:                  1 !default;
 
 
 
-//how to link sub-files/dependencies to be pulled in
+// how to link sub-files/dependencies to be pulled in from scss files here
 @import "abstracts/mixins";
 @import "abstracts/variables";
 // @import "base/base";
@@ -85,7 +85,7 @@ $stretched-link-z-index:                  1 !default;
 
 // test
 
-// import functions & variables
+// import functions & variables from bootstrap here
 @import "../node_modules/bootstrap/scss/_functions";
 @import "../node_modules/bootstrap/scss/_variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -106,5 +106,5 @@ $stretched-link-z-index:                  1 !default;
 //   colorJJSix: $color-jj-six;
 // }
 
-
+// last is importing the bootstrap from node - nothing goes after this
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

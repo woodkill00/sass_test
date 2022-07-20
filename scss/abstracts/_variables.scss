@@ -76,51 +76,51 @@ $custom-theme-colors: (
     "jj_four": rgb(238, 34, 12),
     "jj_four_light": rgb(245, 80, 61),
     "jj_four_dark": rgb(213, 31, 11),
-    "jj_old1": rgb(242, 228, 201),
-    "jj_old1_light": rgb(251, 247, 239),
-    "jj_old1_dark": rgb(235, 214, 173),
-    "jj_old2": rgb(122, 5, 17),
-    "jj_old2_light": rgb(176, 7, 24),
-    "jj_old2_dark": rgb(98, 4, 13),
-    "jj_old3": rgb(0, 44, 64),
-    "jj_old3_light": rgb(0, 84, 122),
-    "jj_old3_dark": rgb(0, 28, 41),
-    "jj_old4": rgb(16, 75, 101),
-    "jj_old4_light": rgb(22, 105, 141),
-    "jj_old4_dark": rgb(11, 53, 71),
-    "jj_old5": rgb(173, 131, 34),
-    "jj_old5_light": rgb(215, 165, 51),
-    "jj_old5_dark": rgb(153, 116, 30),
-    "jj_old6": rgb(30, 57, 26),
-    "jj_old6_light": rgb(45, 84, 39),
-    "jj_old6_dark": rgb(15, 28, 13),
-    "jj_old7": rgb(78, 64, 56),
-    "jj_old7_light": rgb(106, 88, 77),
-    "jj_old7_dark": rgb(59, 49, 43),
-    "jj_old8": rgb(55, 25, 51),
-    "jj_old8_light": rgb(84, 38, 78),
-    "jj_old8_dark": rgb(28, 13, 26),
-    "ffm_1": rgb(185, 74, 120),
-    "ffm_1_light": rgb(198, 108, 146),
-    "ffm_1_dark": rgb(162, 63, 104),
-    "ffm_2": rgb(232, 151, 113),
-    "ffm_2_light": rgb(238, 178, 150),
-    "ffm_2_dark": rgb(226, 126, 80),
-    "ffm_3": rgb(220, 191, 125),
-    "ffm_3_light": rgb(229, 208, 158),
-    "ffm_3_dark": rgb(212, 177, 94),
-    "ffm_4": rgb(136, 212, 163),
-    "ffm_4_light": rgb(165, 223, 185),
-    "ffm_4_dark": rgb(105, 201, 139),
-    "ffm_5": rgb(76, 165, 166),
-    "ffm_5_light": rgb(101, 183, 184),
-    "ffm_5_dark": rgb(64, 138, 140),
-    "ffm_6": rgb(100, 143, 157),
-    "ffm_6_light": rgb(130, 165, 176),
-    "ffm_6_dark": rgb(86, 125, 138),
-    "ffm_7": rgb(128, 101, 146),
-    "ffm_7_light": rgb(147, 123, 163),
-    "ffm_7_dark": rgb(106, 84, 120),
+    // "jj_old1": rgb(242, 228, 201),
+    // "jj_old1_light": rgb(251, 247, 239),
+    // "jj_old1_dark": rgb(235, 214, 173),
+    // "jj_old2": rgb(122, 5, 17),
+    // "jj_old2_light": rgb(176, 7, 24),
+    // "jj_old2_dark": rgb(98, 4, 13),
+    // "jj_old3": rgb(0, 44, 64),
+    // "jj_old3_light": rgb(0, 84, 122),
+    // "jj_old3_dark": rgb(0, 28, 41),
+    // "jj_old4": rgb(16, 75, 101),
+    // "jj_old4_light": rgb(22, 105, 141),
+    // "jj_old4_dark": rgb(11, 53, 71),
+    // "jj_old5": rgb(173, 131, 34),
+    // "jj_old5_light": rgb(215, 165, 51),
+    // "jj_old5_dark": rgb(153, 116, 30),
+    // "jj_old6": rgb(30, 57, 26),
+    // "jj_old6_light": rgb(45, 84, 39),
+    // "jj_old6_dark": rgb(15, 28, 13),
+    // "jj_old7": rgb(78, 64, 56),
+    // "jj_old7_light": rgb(106, 88, 77),
+    // "jj_old7_dark": rgb(59, 49, 43),
+    // "jj_old8": rgb(55, 25, 51),
+    // "jj_old8_light": rgb(84, 38, 78),
+    // "jj_old8_dark": rgb(28, 13, 26),
+    // "ffm_1": rgb(185, 74, 120),
+    // "ffm_1_light": rgb(198, 108, 146),
+    // "ffm_1_dark": rgb(162, 63, 104),
+    // "ffm_2": rgb(232, 151, 113),
+    // "ffm_2_light": rgb(238, 178, 150),
+    // "ffm_2_dark": rgb(226, 126, 80),
+    // "ffm_3": rgb(220, 191, 125),
+    // "ffm_3_light": rgb(229, 208, 158),
+    // "ffm_3_dark": rgb(212, 177, 94),
+    // "ffm_4": rgb(136, 212, 163),
+    // "ffm_4_light": rgb(165, 223, 185),
+    // "ffm_4_dark": rgb(105, 201, 139),
+    // "ffm_5": rgb(76, 165, 166),
+    // "ffm_5_light": rgb(101, 183, 184),
+    // "ffm_5_dark": rgb(64, 138, 140),
+    // "ffm_6": rgb(100, 143, 157),
+    // "ffm_6_light": rgb(130, 165, 176),
+    // "ffm_6_dark": rgb(86, 125, 138),
+    // "ffm_7": rgb(128, 101, 146),
+    // "ffm_7_light": rgb(147, 123, 163),
+    // "ffm_7_dark": rgb(106, 84, 120),
 );
 
 // CUSTOM TABLE VARIANTS
@@ -136,18 +136,18 @@ $custom-utilities-bg-colors: $custom-theme-colors;
 // FONT
 $default-font-size: 1.6rem;
 // FONT VARIABLES - need to be included with google fonts in html.index
-$font-primary: "Open Sans",
-sans-serif;
-$font-secondary: "Roboto",
-sans-serif;
+// $font-primary: "Open Sans",
+// sans-serif;
+// $font-secondary: "Roboto",
+// sans-serif;
 // $font-display: 'Josefin Sans', sans-serif;
-$font-display-1: "Open Sans",
-sans-serif;
-$font-menu-1: "Dancing Script",
-cursive;
+// $font-display-1: "Open Sans",
+// sans-serif;
+// $font-menu-1: "Dancing Script",
+// cursive;
 $jj-font-1: "Cinzel",
 "Trajan Pro", "Open Sans";
-$jj-font-1: "Libre Franklin",
+$jj-font-2: "Libre Franklin",
 "Franklin Gothic Book", "Open Sans";
 .override-text {
     text-transform: none !important;
@@ -176,7 +176,7 @@ a[href^="tel:"]:before {
 
 .sub__options {
     font-size: 1rem;
-    font-family: $font-primary;
+    font-family: $jj-font-1;
     font-style: italic;
     font-variant: bold;
 }

@@ -66,6 +66,22 @@
         npm install $packageName --save-dev
         npm audit fix
 
+#### NPM Run Commands
+Must uncomment the correct style.css sheets
+- Run development sass with watch & changes:
+
+        npm run watch:dev:sass
+
+- Run development sass watch & changes without it being compiled so you can see the css code better:
+
+        npm run watch:sass
+
+- Run to compile all the sass and have it output for final version:
+
+        npm run build:css
+
+
+
 ### Lint Staged
 -   
         lint-staged.config.js
