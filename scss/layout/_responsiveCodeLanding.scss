@@ -1,0 +1,29 @@
+// Tablet Layout
+@media only screen and (min-width: 200px) and (max-width: 991px ){
+    #home form h2, #home form .h2 {font-size: 1.3rem;}
+    #home form button {width: 10rem;}
+    #videro_section .btn_red .btn_red_span_1 {letter-spacing: 0.1rem;}
+    #videro_section .btn_red span {left: 13%;}
+    #videro_section .btn_black span {letter-spacing: 0.1rem; padding: 0.5rem 3rem;}
+    #videro_section .btn_red .btn_red_span_2 {font-size: 0.7rem;}
+    #testimonials .btn_red .btn_red_span_1 {letter-spacing: 0.1rem;}
+    #testimonials .btn_red span {left: 13%;}
+    #testimonials .btn_black span {letter-spacing: 0.1rem; padding: 0.5rem 3rem;}
+    #testimonials .btn_red .btn_red_span_2 {font-size: 0.7rem;}
+
+
+}
+// Mobile Layout
+@media only screen and (min-width:200px) and (max-width: 480px) {
+    #videro_section .btn_red .btn_red_span_1 {letter-spacing: 0.1rem;}
+    #videro_section .btn_red span {left: 13%;}
+    #videro_section .btn_red { padding: 1rem 1rem;}
+    #videro_section .btn_black span {letter-spacing: 0.1rem;}
+    .courses_main .courses h4, .courses_main .courses .h4 {font-size: 1rem;}
+    .courses_main .book_a_consultation h4, .courses_main .book_a_consultation .h4 {font-size: 1rem;}
+    #testimonials .btn_red .btn_red_span_1 {letter-spacing: 0.1rem;}
+    #testimonials .btn_red span {left: 13%;}
+    #testimonials .btn_red {padding: 1rem 1rem;}
+    #testimonials .btn_black span {letter-spacing: 0.1rem;}
+    #accordion .accordion-button { font-size: 1rem;}
+}

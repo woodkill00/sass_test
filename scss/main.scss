@@ -107,7 +107,7 @@ $stretched-link-z-index:                  1 !default;
 // }
 
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
 
 
 /******* MD.AL-AMIN code Start Here *******/ 
@@ -118,6 +118,8 @@ $stretched-link-z-index:                  1 !default;
 @import "../scss/components/HomeSlider";
 @import "../scss/components/serviceSection";
 @import "../scss/layout/landingPage";
-
+@import "../scss/layout/responsiveCodeLanding";
 
 /******* MD.AL-AMIN code End Here *******/ 
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
