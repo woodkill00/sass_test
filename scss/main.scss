@@ -67,12 +67,15 @@ $stretched-link-z-index:                  1 !default;
 // @import "components/components";
 // @import "components/comingSoon";
 // @import "components/glass";
+@import "components/serviceSection";
 // @import "layout/footer";
 // @import "layout/header";
 // @import "layout/home";
+@import "layout/landingPage";
 // @import "layout/main";
 // @import "layout/navbar";
 // @import "layout/sidebar";
+@import "layout/responsiveCodeLanding";
 // @import "typography/typography";
 // @import "typography/style_base";
 // @import "abstracts/customVariables";
@@ -108,3 +111,8 @@ $stretched-link-z-index:                  1 !default;
 
 // last is importing the bootstrap from node - nothing goes after this
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+// :root {
+//   --bs-body-font-family: Cinzel;
+// }
+// $headings-font-family: $jj-font-1;
