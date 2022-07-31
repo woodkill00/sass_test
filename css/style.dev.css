@@ -406,6 +406,7 @@ html {
   background-position: center;
 }
 #home .home_top {
+  padding: 0.7rem 0;
   background-color: rgb(0, 0, 0);
 }
 #home .home_top p {
@@ -413,15 +414,25 @@ html {
   text-align: center;
   font-size: 0.8rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
+  margin-bottom: 0;
 }
-#home .home_right h1, #home .home_right .h1 {
+#home .home_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#home .home_left .home_left_inner h1, #home .home_left .home_left_inner .h1 {
   color: rgb(255, 255, 255);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
+  font-weight: bold;
 }
-#home .home_right p {
+#home .home_left .home_left_inner p {
+  hyphens: auto;
   color: rgb(255, 255, 255);
+  word-break: break-all;
+  font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
 }
-#home .home_right button {
+#home .home_left .home_left_inner button {
   width: 13rem;
   padding: 0.7rem 3rem;
   border-radius: 50rem;
@@ -430,18 +441,23 @@ html {
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
 }
-#home form {
+#home .home_right {
+  position: absolute;
+  right: 0;
+  top: 2.4rem;
+}
+#home .home_right form {
   width: 90%;
   margin: 1rem auto;
   z-index: 999;
   border-radius: 15%;
   background-color: rgb(255, 255, 255);
 }
-#home form input {
+#home .home_right form input {
   border-radius: 0.7rem;
   background-color: rgb(235, 235, 235);
 }
-#home form button {
+#home .home_right form button {
   width: 13rem;
   padding: 0.7rem 3rem;
   border-radius: 50rem;
@@ -450,11 +466,11 @@ html {
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
 }
-#home form h2, #home form .h2 {
+#home .home_right form h2, #home .home_right form .h2 {
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
-#home form p {
+#home .home_right form p {
   hyphens: auto;
   font-size: 0.9rem;
   word-break: break-all;
@@ -982,6 +998,46 @@ footer .footer_logo img {
   }
 }
 @media only screen and (min-width: 200px) and (max-width: 480px) {
+  #home {
+    background-image: none;
+  }
+  #home .home_left {
+    background-image: linear-gradient(to right, rgba(238, 34, 12, 0.55), rgba(0, 0, 0, 0.99)), url(../../img/jesse/jpg/jesse-james-2.1920x1080.jpg);
+    background-position: center;
+  }
+  .home_left_inner {
+    margin-left: 50%;
+  }
+  #home .home_left .home_left_inner h1, #home .home_left .home_left_inner .h1 {
+    font-size: 1.3rem;
+  }
+  #home .home_left .home_left_inner p {
+    font-size: 0.7rem;
+  }
+  #home .home_left .home_left_inner button {
+    width: 9rem;
+    padding: 0.7rem 0rem;
+  }
+  #home .home_right {
+    position: relative;
+    top: 0;
+  }
+  #home .home_right form p {
+    font-size: 0.76rem;
+  }
+  #home .home_right form button {
+    width: 9rem;
+    padding: 0.7rem 0rem;
+  }
+  #videro_section iframe {
+    min-height: 13rem;
+  }
+  #videro_section h3, #videro_section .h3 {
+    font-size: 1.2rem;
+  }
+  #videro_section p {
+    font-size: 0.7rem;
+  }
   #videro_section .btn_red .btn_red_span_1 {
     letter-spacing: 0.1rem;
   }

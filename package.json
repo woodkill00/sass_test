@@ -74,7 +74,8 @@
     "npm": "^8.13.1"
   },
   "os": [
-    "linux"
+    "linux",
+    "win32"
   ],
   "type": "module",
   "lint-staged": {

@@ -11,45 +11,61 @@ html{
             url(../../img/jesse/jpg/jesse-james-2.1920x1080.jpg);
     background-position: center;
     .home_top{
+        padding: .7rem 0;
         background-color: $color-black;
         p{
             color: $color-white;
             text-align: center;
             font-size: .8rem;
             font-family: $jj-font-2;
+            margin-bottom: 0;
+        }
+    }
+    .home_left{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .home_left_inner{
+            h1{
+                color: $color-white;
+                font-family: $jj-font-1;
+                font-weight: bold;
+            }
+            p{
+                hyphens: auto;
+                color: $color-white;
+                word-break: break-all;
+                font-family: $jj-font-2;
+            }
+            button{
+                @include btn_yellow;
+            }
         }
     }
     .home_right{
-        h1{
-            color: $color-white;
-            font-family: $jj-font-1;
-        }
-        p{
-            color: $color-white;
-        }
-        button{
-            @include btn_yellow;
-        }
-    }
-    form{
-        width: 90%;
-        margin: 1rem auto;
-        z-index: 999;
-        border-radius: 15%;
-        background-color: $color-white;
-        input{
-            border-radius: .7rem;
-            background-color: $color-white-dark-1;
-        }
-        button{
-            @include btn_yellow;
-        }
-        h2{
-            color: $color-jj-one;
-            font-family: $jj-font-1;
-        }
-        p{
-            @include peragraph;
+        position: absolute;
+        right: 0;
+        top: 2.4rem;
+        form{
+            width: 90%;
+            margin: 1rem auto;
+            z-index: 999;
+            border-radius: 15%;
+            background-color: $color-white;
+            input{
+                border-radius: .7rem;
+                background-color: $color-white-dark-1;
+            }
+            button{
+                @include btn_yellow;
+            }
+            h2{
+                color: $color-jj-one;
+                font-family: $jj-font-1;
+            }
+            p{
+                @include peragraph;
+            }
         }
     }
 }
