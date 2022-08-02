@@ -5,7 +5,7 @@
   }
 
 // custom variables
-// $primary:       $blue !default;
+// $primary:       $pink !default;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
@@ -106,5 +106,20 @@ $stretched-link-z-index:                  1 !default;
 //   colorJJSix: $color-jj-six;
 // }
 
+
+
+
+
+/******* MD.AL-AMIN code Start Here *******/ 
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Dancing+Script&family=Libre+Franklin&display=swap');
+@import "../scss/abstracts/variables";
+@import "../scss/abstracts/mixins";
+@import "../scss/layout/navbar";
+@import "../scss/components/HomeSlider";
+@import "../scss/components/serviceSection";
+@import "../scss/layout/landingPage";
+@import "../scss/layout/responsiveCodeLanding";
+
+/******* MD.AL-AMIN code End Here *******/ 
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

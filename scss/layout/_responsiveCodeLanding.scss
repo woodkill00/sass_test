@@ -1,0 +1,86 @@
+// Tablet Layout
+@media only screen and (min-width: 200px) and (max-width: 991px ){
+    #home .home_left .home_left_inner p {font-size: .7rem; line-height: 1rem;}
+    #home .home_right form h2, #home .home_right form .h2 {font-size: 1.2rem;line-height: 1.5rem;}
+    #home .home_right form p {font-size: 0.7rem;margin-bottom: 1rem;}
+    #videro_section .btn_red .btn_red_span_1 {font-size: 0.7rem;letter-spacing: 0.1rem;}
+    #videro_section .btn_red .btn_red_span_2 {font-size: 0.6rem; padding: 0;}
+    #videro_section .btn_red span {left: 23%;}
+    #videro_section .btn_black span {font-size: 0.7rem;letter-spacing: 0.1rem; padding: 0.5rem 3rem;}
+    .courses_main .courses {width: 30rem;height: 15rem;margin-right: 2rem;}
+    .courses_main .book_a_consultation {width: 30rem;height: 15rem;}
+    #gurantee p {font-size: 0.5rem;}
+    #testimonials .testimonial_top p {font-size: 0.6rem;}
+    #testimonials p {font-size: 0.6rem;}
+    #testimonials .btn_red .btn_red_span_1 {font-size: 0.7rem;letter-spacing: 0.1rem;}
+    #testimonials .btn_red .btn_red_span_2 {font-size: 0.6rem; padding: 0;}
+    #testimonials .btn_red span {left: 23%;}
+    #testimonials .btn_black span {font-size: 0.7rem;letter-spacing: 0.1rem; padding: 0.5rem 3rem;}
+}
+// Mobile Layout
+@media only screen and (min-width:200px) and (max-width: 540px) {
+    #home{background-image: none;}
+    #home .home_left {background-image:url(../../img/landingPage/home_background.png);background-position: top; background-size: cover;background-repeat: no-repeat;}
+    .home_left_inner{margin-left: 50%;}
+    #home .home_left .home_left_inner h1, #home .home_left .home_left_inner .h1 {font-size: 1rem;line-height: 1.3rem;}
+    #home .home_left .home_left_inner p {font-size: .4rem; line-height: .7rem; margin-top: .5rem;}
+    #home .home_left .home_left_inner button {font-size: 0.6rem; padding: 0.3rem 2rem;}
+    #home .home_right {position: relative;top: 0;}
+    #home .home_right form h2, #home .home_right form .h2 {font-size: 1rem;line-height: 1.3rem;}
+    #home .home_right form p {font-size: 0.6rem;margin-bottom: 1rem;}
+    #home .home_right form button {font-size: 0.6rem; padding: 0.3rem 2rem;}
+    #videro_section iframe { min-height: 13rem;}
+    #videro_section h3, #videro_section .h3 {font-size: 1rem;}
+    #videro_section p {font-size: 0.6rem;}
+    #videro_section .btn_red .btn_red_span_1 {font-size: 0.6rem; letter-spacing: 0.1rem;padding-top: 0.4rem;}
+    #videro_section .btn_red .btn_red_span_2 {font-size: 0.5rem; padding: 0;}
+    #videro_section .btn_red span {left: 27%;}
+    #videro_section .btn_red { padding: .5rem;}
+    #videro_section .btn_red i {margin: .5rem 0;}
+    #videro_section .btn_black img {margin: .5rem 0;width: 1.5rem;}
+    #videro_section .btn_black span {font-size: 0.6rem; letter-spacing: 0.1rem;padding: 0.1rem 0rem 0 5rem;}
+    .courses_main .courses {width: 30rem;height: 10rem;margin-right: 1rem;}
+    .courses_main .book_a_consultation {width: 30rem;height: 10rem;}
+    .courses_main .courses h4, .courses_main .courses .h4 {font-size: .7rem;}
+    .courses_main .book_a_consultation h4, .courses_main .book_a_consultation .h4 {font-size: .7rem;}
+    #about img { width: 100%;}
+    #about h3, #about .h3 {font-size: 1rem;}
+    #about p {font-size: 0.6rem;}
+    #about button{font-size: 0.6rem; padding: 0.3rem 2rem;}
+    #book .book_text h1, #book .book_text .h1 {font-size: 1rem;}
+    #book .book_text p {margin-top: .5rem;font-size: 0.6rem;line-height: .7rem;}
+    #book .book_text button{font-size: 0.6rem; padding: 0.3rem 2rem;}
+    #book .book_image img {height: 10rem;}
+    #benefits .benefits_left h4, #benefits .benefits_left .h4 {font-size: 1rem;}
+    #benefits .benefits_left p {font-size: 0.6rem;}
+    #benefits .benefits_left button {display: none;}
+    #benefits .benefits_right h4, #benefits .benefits_right .h4 {font-size: 1rem;}
+    #benefits .benefits_right p {font-size: 0.6rem;}
+    #guarantee_banner .guarantee_banner_text h4, #guarantee_banner .guarantee_banner_text .h4 {font-size: 1rem;}
+    #guarantee_banner {background-size: cover;background-position: top;}
+    #guarantee_banner .guarantee_banner_text {padding-top: 2rem;}
+    #guarantee_banner .guarantee_banner_text p {font-size: .4rem; line-height: .7rem;}
+    #guarantee_banner .guarantee_banner_text button {font-size: 0.6rem; padding: 0.3rem 2rem;}
+    #testimonial_slider .carousel-item {padding: 7% 15%;}
+    #testimonial_slider img {width: 2rem;margin-bottom: .8rem;}
+    #testimonial_slider p {font-size: 0.8rem;}
+    #testimonial_slider span {font-size: 0.9rem;}
+    #testimonials .testimonial_top {margin-left: 0rem;}
+    #testimonials .testimonial_top h3, #testimonials .testimonial_top .h3 {font-size: 1rem;}
+    #testimonials .testimonial_top p {font-size: 0.6rem;}
+    .carousel-control-prev { left: -2rem !important;}
+    .carousel-control-next { right: -2rem !important;}
+    #testimonials iframe {min-height: 10rem;}
+    #testimonials h3, #testimonials .h3 {font-size: 1rem;}
+    #testimonials p {font-size: 0.6rem;}
+    #testimonials .btn_red .btn_red_span_1 {font-size: 0.6rem; letter-spacing: 0.1rem;padding-top: 0.4rem;}
+    #testimonials .btn_red .btn_red_span_2 {font-size: 0.5rem; padding: 0;}
+    #testimonials .btn_red span {left: 27%}
+    #testimonials .btn_red { padding: .5rem;}
+    #testimonials .btn_red i {margin: .5rem 0;}
+    #testimonials .btn_black img {margin: .5rem 0;width: 1.5rem;}
+    #testimonials .btn_black span {font-size: 0.6rem; letter-spacing: 0.1rem;padding: 0.1rem 0rem 0 5rem;}
+    #accordion .accordion-button { font-size: 1rem;}
+    #accordion .accordion-button::before {margin-right: 1rem;}
+    #accordion .accordion-body {font-size: 0.6rem;padding: 1rem 1.5rem 1rem 3.25rem;}
+}

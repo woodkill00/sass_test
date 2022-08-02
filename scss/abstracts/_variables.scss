@@ -47,9 +47,12 @@ $color-black-gradient: to right, rgba(0, 0, 0, .85), rgba(0, 0, 0, .85);
 // $color-six-gradient: to right, rgba(234, 47, 134, .85), rgba(234, 47, 134, .85);
 
 $color-jj-one: rgb(224, 22, 22);
+$color-jj_one_dark: rgb(186, 18, 18);
+
 $color-jj-one-gradient: to right, rgba(224, 22, 22, .85), rgba(224, 22, 22, .85);
 
 $color-jj-two: rgb(249, 221, 29);
+$color-jj_two_dark: rgb(239, 208, 6);
 $color-jj-two-gradient: to right, rgba(249, 221, 29, .85), rgba(249, 221, 29, .85);
 
 $color-jj-three: rgb(161, 168, 171);
@@ -147,7 +150,7 @@ $font-menu-1: "Dancing Script",
 cursive;
 $jj-font-1: "Cinzel",
 "Trajan Pro", "Open Sans";
-$jj-font-1: "Libre Franklin",
+$jj-font-2: "Libre Franklin",
 "Franklin Gothic Book", "Open Sans";
 .override-text {
     text-transform: none !important;
