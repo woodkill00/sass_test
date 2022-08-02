@@ -2,40 +2,42 @@ html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-#home {
-    background-image: 
-        linear-gradient(
-            to right,
-            rgb(238 34 12 / 55%),
-            rgb(0 0 0 / 99%)), 
-            url(../../img/jesse/jpg/jesse-james-2.1920x1080.jpg);
-    background-position: center;
-    .home_top{
-        padding: .7rem 0;
-        background-color: $color-black;
-        p{
-            color: $color-white;
-            text-align: center;
-            font-size: .8rem;
-            font-family: $jj-font-2;
-            margin-bottom: 0;
-        }
+.home_top{
+    padding: .7rem 0;
+    background-color: $color-black;
+    p{
+        color: $color-white;
+        text-align: center;
+        font-size: .6rem;
+        font-family: $jj-font-2;
+        margin-bottom: 0;
     }
+}
+#home {
+    background-image: url("../../img/landingPage/home_background.png");
+    background-size: cover;
+
     .home_left{
         display: flex;
         flex-direction: column;
         justify-content: center;
         .home_left_inner{
+            padding-top: 2rem;
             h1{
+                font-size: 1.5625rem;
                 color: $color-white;
                 font-family: $jj-font-1;
                 font-weight: bold;
+                line-height: 1.6494rem;
             }
             p{
                 hyphens: auto;
                 color: $color-white;
                 word-break: break-all;
                 font-family: $jj-font-2;
+                font-size: 0.9rem;
+                line-height: 1.3rem;
+                margin-top: 1rem;
             }
             button{
                 @include btn_yellow;
@@ -47,24 +49,37 @@ html{
         right: 0;
         top: 2.4rem;
         form{
-            width: 90%;
+            width: 70%;
             margin: 1rem auto;
             z-index: 999;
             border-radius: 15%;
             background-color: $color-white;
             input{
+                font-family: $jj-font-2;
                 border-radius: .7rem;
-                background-color: $color-white-dark-1;
+                background-color: $color-white;
+                -moz-box-shadow:    inset 0 0 10px $color-white-dark-1;
+                -webkit-box-shadow: inset 0 0 10px $color-white-dark-1;
+                box-shadow:         inset 0 0 10px $color-white-dark-1;
+                &::placeholder{
+                    font-size: 0.7rem;
+                }
             }
             button{
+                margin-top: 1rem;
                 @include btn_yellow;
             }
             h2{
+                font-size: 1.2rem;
+                line-height: 1.6494rem;
                 color: $color-jj-one;
                 font-family: $jj-font-1;
             }
             p{
+                margin-top: 0;
+                margin-bottom: 2rem;
                 @include peragraph;
+                line-height: 1rem;
             }
         }
     }
@@ -94,17 +109,18 @@ html{
     align-items: center;
     .courses{
         width: 25rem;
-        height: 15rem;
+        height: 20rem;
         position: relative;
-        margin-right: 1rem;
+        margin-right: 3rem;
+        background-size: cover;
         background-position: unset;
         background-repeat: no-repeat;
-        background-image: url(../../img/jesse/jpg/jesse-james-2.414x896.jpg);
+        background-image: url(../../img/landingPage/courses.png);
         h4{
             top: 50%;
             left: 50%;
             z-index: 1;
-            font-size: 2rem;
+            font-size: 1rem;
             font-weight: bold;
             position: absolute;
             text-align: center;
@@ -112,35 +128,21 @@ html{
             font-family: $jj-font-2;
             text-transform: uppercase;
             transform: translate(-50%,-50%);
-        }
-        .left{
-            img{
-                left: 0;
-                height: 15rem;
-                position: absolute;
-            }
-        }
-        .right{
-            img {
-                right: 0;
-                height: 15rem;
-                position: absolute;
-
-            }
         }
     }
     .book_a_consultation{
         width: 25rem;
-        height: 15rem;
+        height: 20rem;
         position: relative;
+        background-size: cover;
         background-position: unset;
         background-repeat: no-repeat;
-        background-image: url(../../img/jesse/jpg/jesse-james-2.414x896.jpg);
+        background-image: url(../../img/landingPage/book_a_consultation.png);
         h4{
             top: 50%;
             left: 50%;
             z-index: 1;
-            font-size: 2rem;
+            font-size: 1rem;
             font-weight: bold;
             position: absolute;
             text-align: center;
@@ -148,31 +150,13 @@ html{
             font-family: $jj-font-2;
             text-transform: uppercase;
             transform: translate(-50%,-50%);
-        }
-        .left{
-            img{
-                left: 0;
-                height: 15rem;
-                position: absolute;
-                transform: rotate(180deg);
-
-            }
-        }
-        .right{
-            img {
-                right: 0;
-                height: 15rem;
-                position: absolute;
-                transform: rotate(180deg);
-
-            }
         }
     }
 }
 #about{
     img{
         width: 90%;
-        height: 110%;
+        height: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -186,29 +170,30 @@ html{
     }
     button{
         @include btn_yellow;
+        padding: .5rem 2rem;
     }
 }
 #book{
-    background-image: 
-    linear-gradient(
-        to right,
-        rgb(238 34 12 / 70%),
-        rgb(238 34 12 / 70%)), 
-        url(../../img/jesse/jpg/jesse-standing-3.1920x1080.jpg);
-background-position: center;
-    // .main_book{
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    // }
+    background-image: url(../../img/landingPage/book_background.png);
+    background-position: center;
+    background-size: cover;
+    .book_main{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     .book_text{
-        // width: 50%;
+        width: 50%;
         h1{
-            color: $color-white;
+            font-size: 1.8rem;
             font-weight: bold;
+            color: $color-white;
             font-family: $jj-font-1;
         }
         p{
+            margin-top: 1rem;
+            font-size: 0.9rem;
+            line-height: 1.3rem;
             color: $color-white;
         }
         button{
@@ -216,8 +201,11 @@ background-position: center;
         }
     }
     .book_image{
-        // width: 50%;
+        width: 50%;
         text-align: center;
+        img{
+            height: 25rem;
+        }
     }
 }
 #benefits{
@@ -227,20 +215,19 @@ background-position: center;
         flex-direction: column;
         justify-content: center;
         h4{
-            font-weight: bold;
-            color: $color-jj-one;
-            font-family: $jj-font-1;
-            text-transform: uppercase;
+            @include heading_text;
         }
         p{
             @include peragraph;
         }
         button{
+            width: 10rem;
             @include btn_yellow;
         }
     }
     .benefits_right{
         h4{
+            font-size: 1.3rem;
             font-weight: bold;
             font-family: $jj-font-1;
             text-transform: uppercase;
@@ -251,29 +238,12 @@ background-position: center;
     }
 }
 #guarantee_banner{
-    background: 
-    linear-gradient(
-        to right,
-        rgb(238 34 12 / 55%),
-        rgb(0, 0, 0));
-        // url(../../img/jesse/jpg/jesse-james-1.414x896.jpg);
+        background: url(../../img/landingPage/background.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-    .banner_left{
-        height: 25rem;
-        z-index: -1;
-        background-image: 
-        url(../../img/jesse/jpg/jesse-james-1.414x896.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-    .banner_right{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-       background-color: $color-black;
+    .guarantee_banner_text{
+        margin-left: 60%;
        h4{
         @include heading_text;
        }
@@ -287,18 +257,21 @@ background-position: center;
     }
 }
 #gurantee{
+    .gurantee_div{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
     i{
         color: $color-jj-one;
     }
     h4{
-        font-weight: bold;
-        text-align: center;
-        color: $color-jj-one;
-        font-family: $jj-font-1;
+        @include heading_text;
     }
     p{
         @include peragraph;
-        text-align: center;
+        text-align: left;
     }
     button{
         @include btn_yellow;
@@ -307,28 +280,55 @@ background-position: center;
 #testimonial_slider{
     background-color: $color-jj-one;
     .carousel-item{
-        padding: 7% 20%;
+        padding: 7% 27%;
     }
-    i{
-        color: $color-white;
-        text-align: center;
+    img{
+        width: 3rem;
+        margin-bottom: 1rem;
     }
     p{
-        font-size: 1rem;
+        hyphens: auto;
+        font-size: .9rem;
         font-weight: 500;
         color: $color-white;
+        word-break: break-all;
         font-family: $jj-font-2;
     }
     span{
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: left;
         color: $color-white;
         font-family: $jj-font-2;
     }
 }
 #testimonials{
+    .carousel-control-prev{
+        justify-content: left;
+    }
+    .carousel-control-next{
+        justify-content: right;
+    }
+    .carousel-item{
+        padding: 7% 4%;
+    }
+    .carousel-control-prev-icon {
+        background-image: none;
+        i{
+            color: $color-black;
+        }
+    }
+    .carousel-control-next-icon {
+        background-image: none;
+        i{
+            color: $color-black;
+        }
+    }
+    // .carousel-control-prev-icon, .carousel-control-next-icon {
+    //     background-color: $color-jj-one;
+    // }
     .testimonial_top{
+        margin-left: 3rem;
         h3{
             @include heading_text;
         }
@@ -358,7 +358,7 @@ background-position: center;
 #accordion{
     .accordion-button{
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         color: $color-jj-one;
         font-family: $jj-font-1;
     }
@@ -389,12 +389,16 @@ background-position: center;
         display: none;
     }
     .accordion-body {
-        padding: 1rem 4.25rem;
+        padding: 1rem 1.5rem 1rem 4.25rem;
         @include peragraph;
+        font-size: .9rem;
     }
 }
 footer{
     .social_icon{
+        a{
+            text-decoration: none;
+        }
         i{
             padding: .5rem;
             border-radius: 50%;

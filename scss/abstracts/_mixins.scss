@@ -73,23 +73,24 @@ only screen, media query only applies to screens, example... would not apply to 
     text-align: center;
 }
 @mixin  btn_yellow {
-    width: 13rem;
-    padding: .7rem 3rem;
-    border-radius: 50rem;
     font-weight: 500;
+    font-size: 0.8rem;
+    padding: .5rem 3rem;
+    border-radius: 50rem;
+    line-height: 1.6494rem;
     font-family: $jj-font-2;
     text-transform: uppercase;
     background-color: $color-jj-two;
 }
 @mixin heading_text {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-weight: bold;
     color: $color-jj-one;
     font-family: $jj-font-1;
 }
 @mixin peragraph {
     hyphens: auto;
-    font-size: .9rem;
+    font-size: .7rem;
     word-break: break-all;
     color: $color-black;
     font-family: $jj-font-2;
@@ -98,31 +99,33 @@ only screen, media query only applies to screens, example... would not apply to 
     width: 100%;
     color: $color-white;
     border-radius: 1.3rem;
+    padding-left: 1.5rem;
     background-color: $color-jj-one;
     i{
         float: left;
         margin: 1rem 0;
         border-radius: 50%;
         position: relative;
-        padding: .5rem .7rem;
+        padding: .3rem .5rem;
         color: $color-jj-one;
         background-color: $color-white;
     }
     span{
         float: left;
         text-align: left;
-        padding: .5rem 1rem;
         position: absolute;
-        left: 10%;
+        left: 14%;
     }
     .btn_red_span_1{
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: bold;
-        letter-spacing: .3rem;
+        padding-top: .5rem;
+        letter-spacing: .2rem;
         text-transform: uppercase;
     }
     .btn_red_span_2{
-        font-size: .9rem;
+        padding-top: .3rem;
+        font-size: .7rem;
     }
     
 }
@@ -133,14 +136,15 @@ only screen, media query only applies to screens, example... would not apply to 
     padding-left: 2rem;
     border-radius: 1.3rem;
     background-color: $color-black;
-    i{
+    img{
         float: left;
         margin: 1rem 0;
-        border-radius: 50%;
+        width: 2rem;
+        // border-radius: 50%;
         position: relative;
-        padding: .5rem .7rem;
-        color: $color-white;
-        border: 1px solid $color-white;
+        // padding: .5rem .7rem;
+        // color: $color-white;
+        // border: 1px solid $color-white;
     }
     span{
         text-align: center;
@@ -148,9 +152,9 @@ only screen, media query only applies to screens, example... would not apply to 
         position: absolute;
         left: 10%;
         color: $color-white;
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: bold;
-        letter-spacing: .3rem;
+        letter-spacing: .2rem;
         text-transform: uppercase;
     }
 }

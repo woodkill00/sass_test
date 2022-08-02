@@ -401,42 +401,52 @@ html {
   overflow-x: hidden;
 }
 
-#home {
-  background-image: linear-gradient(to right, rgba(238, 34, 12, 0.55), rgba(0, 0, 0, 0.99)), url(../../img/jesse/jpg/jesse-james-2.1920x1080.jpg);
-  background-position: center;
-}
-#home .home_top {
+.home_top {
   padding: 0.7rem 0;
   background-color: rgb(0, 0, 0);
 }
-#home .home_top p {
+.home_top p {
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   margin-bottom: 0;
+}
+
+#home {
+  background-image: url("../../img/landingPage/home_background.png");
+  background-size: cover;
 }
 #home .home_left {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+#home .home_left .home_left_inner {
+  padding-top: 2rem;
+}
 #home .home_left .home_left_inner h1, #home .home_left .home_left_inner .h1 {
+  font-size: 1.5625rem;
   color: rgb(255, 255, 255);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
   font-weight: bold;
+  line-height: 1.6494rem;
 }
 #home .home_left .home_left_inner p {
   hyphens: auto;
   color: rgb(255, 255, 255);
   word-break: break-all;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  margin-top: 1rem;
 }
 #home .home_left .home_left_inner button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
@@ -447,35 +457,49 @@ html {
   top: 2.4rem;
 }
 #home .home_right form {
-  width: 90%;
+  width: 70%;
   margin: 1rem auto;
   z-index: 999;
   border-radius: 15%;
   background-color: rgb(255, 255, 255);
 }
 #home .home_right form input {
+  font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   border-radius: 0.7rem;
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
+  -moz-box-shadow: inset 0 0 10px rgb(235, 235, 235);
+  -webkit-box-shadow: inset 0 0 10px rgb(235, 235, 235);
+  box-shadow: inset 0 0 10px rgb(235, 235, 235);
+}
+#home .home_right form input::placeholder {
+  font-size: 0.7rem;
 }
 #home .home_right form button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
+  margin-top: 1rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
 }
 #home .home_right form h2, #home .home_right form .h2 {
+  font-size: 1.2rem;
+  line-height: 1.6494rem;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #home .home_right form p {
+  margin-top: 0;
+  margin-bottom: 2rem;
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
+  line-height: 1rem;
 }
 
 #videro_section iframe {
@@ -484,14 +508,14 @@ html {
   max-height: 100%;
 }
 #videro_section h3, #videro_section .h3 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #videro_section p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
@@ -500,6 +524,7 @@ html {
   width: 100%;
   color: rgb(255, 255, 255);
   border-radius: 1.3rem;
+  padding-left: 1.5rem;
   background-color: rgb(224, 22, 22);
 }
 #videro_section .btn_red i {
@@ -507,25 +532,26 @@ html {
   margin: 1rem 0;
   border-radius: 50%;
   position: relative;
-  padding: 0.5rem 0.7rem;
+  padding: 0.3rem 0.5rem;
   color: rgb(224, 22, 22);
   background-color: rgb(255, 255, 255);
 }
 #videro_section .btn_red span {
   float: left;
   text-align: left;
-  padding: 0.5rem 1rem;
   position: absolute;
-  left: 10%;
+  left: 14%;
 }
 #videro_section .btn_red .btn_red_span_1 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.3rem;
+  padding-top: 0.5rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 #videro_section .btn_red .btn_red_span_2 {
-  font-size: 0.9rem;
+  padding-top: 0.3rem;
+  font-size: 0.7rem;
 }
 #videro_section .btn_black {
   width: 100%;
@@ -535,14 +561,11 @@ html {
   border-radius: 1.3rem;
   background-color: rgb(0, 0, 0);
 }
-#videro_section .btn_black i {
+#videro_section .btn_black img {
   float: left;
   margin: 1rem 0;
-  border-radius: 50%;
+  width: 2rem;
   position: relative;
-  padding: 0.5rem 0.7rem;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
 }
 #videro_section .btn_black span {
   text-align: center;
@@ -550,9 +573,9 @@ html {
   position: absolute;
   left: 10%;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
@@ -563,18 +586,19 @@ html {
 }
 .courses_main .courses {
   width: 25rem;
-  height: 15rem;
+  height: 20rem;
   position: relative;
-  margin-right: 1rem;
+  margin-right: 3rem;
+  background-size: cover;
   background-position: unset;
   background-repeat: no-repeat;
-  background-image: url(../../img/jesse/jpg/jesse-james-2.414x896.jpg);
+  background-image: url(../../img/landingPage/courses.png);
 }
 .courses_main .courses h4, .courses_main .courses .h4 {
   top: 50%;
   left: 50%;
   z-index: 1;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   position: absolute;
   text-align: center;
@@ -583,29 +607,20 @@ html {
   text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
-.courses_main .courses .left img {
-  left: 0;
-  height: 15rem;
-  position: absolute;
-}
-.courses_main .courses .right img {
-  right: 0;
-  height: 15rem;
-  position: absolute;
-}
 .courses_main .book_a_consultation {
   width: 25rem;
-  height: 15rem;
+  height: 20rem;
   position: relative;
+  background-size: cover;
   background-position: unset;
   background-repeat: no-repeat;
-  background-image: url(../../img/jesse/jpg/jesse-james-2.414x896.jpg);
+  background-image: url(../../img/landingPage/book_a_consultation.png);
 }
 .courses_main .book_a_consultation h4, .courses_main .book_a_consultation .h4 {
   top: 50%;
   left: 50%;
   z-index: 1;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
   position: absolute;
   text-align: center;
@@ -614,73 +629,81 @@ html {
   text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
-.courses_main .book_a_consultation .left img {
-  left: 0;
-  height: 15rem;
-  position: absolute;
-  transform: rotate(180deg);
-}
-.courses_main .book_a_consultation .right img {
-  right: 0;
-  height: 15rem;
-  position: absolute;
-  transform: rotate(180deg);
-}
 
 #about img {
   width: 90%;
-  height: 110%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: -2rem -2rem 0 0 rgb(224, 22, 22);
 }
 #about h3, #about .h3 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #about p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
 }
 #about button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
+  padding: 0.5rem 2rem;
 }
 
 #book {
-  background-image: linear-gradient(to right, rgba(238, 34, 12, 0.7), rgba(238, 34, 12, 0.7)), url(../../img/jesse/jpg/jesse-standing-3.1920x1080.jpg);
+  background-image: url(../../img/landingPage/book_background.png);
   background-position: center;
+  background-size: cover;
+}
+#book .book_main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#book .book_text {
+  width: 50%;
 }
 #book .book_text h1, #book .book_text .h1 {
-  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
   font-weight: bold;
+  color: rgb(255, 255, 255);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #book .book_text p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
   color: rgb(255, 255, 255);
 }
 #book .book_text button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
 }
 #book .book_image {
+  width: 50%;
   text-align: center;
+}
+#book .book_image img {
+  height: 25rem;
 }
 
 #benefits .benefits_left {
@@ -690,106 +713,106 @@ html {
   justify-content: center;
 }
 #benefits .benefits_left h4, #benefits .benefits_left .h4 {
+  font-size: 1.3rem;
   font-weight: bold;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
-  text-transform: uppercase;
 }
 #benefits .benefits_left p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
 }
 #benefits .benefits_left button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
+  width: 10rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
 }
 #benefits .benefits_right h4, #benefits .benefits_right .h4 {
+  font-size: 1.3rem;
   font-weight: bold;
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
   text-transform: uppercase;
 }
 #benefits .benefits_right p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
 }
 
 #guarantee_banner {
-  background: linear-gradient(to right, rgba(238, 34, 12, 0.55), rgb(0, 0, 0));
+  background: url(../../img/landingPage/background.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-#guarantee_banner .banner_left {
-  height: 25rem;
-  z-index: -1;
-  background-image: url(../../img/jesse/jpg/jesse-james-1.414x896.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#guarantee_banner .guarantee_banner_text {
+  margin-left: 60%;
 }
-#guarantee_banner .banner_right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: rgb(0, 0, 0);
-}
-#guarantee_banner .banner_right h4, #guarantee_banner .banner_right .h4 {
-  font-size: 1.7rem;
+#guarantee_banner .guarantee_banner_text h4, #guarantee_banner .guarantee_banner_text .h4 {
+  font-size: 1.3rem;
   font-weight: bold;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
-#guarantee_banner .banner_right p {
+#guarantee_banner .guarantee_banner_text p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   color: rgb(255, 255, 255);
 }
-#guarantee_banner .banner_right button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
+#guarantee_banner .guarantee_banner_text button {
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
 }
 
+#gurantee .gurantee_div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 #gurantee i {
   color: rgb(224, 22, 22);
 }
 #gurantee h4, #gurantee .h4 {
+  font-size: 1.3rem;
   font-weight: bold;
-  text-align: center;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #gurantee p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
-  text-align: center;
+  text-align: left;
 }
 #gurantee button {
-  width: 13rem;
-  padding: 0.7rem 3rem;
-  border-radius: 50rem;
   font-weight: 500;
+  font-size: 0.8rem;
+  padding: 0.5rem 3rem;
+  border-radius: 50rem;
+  line-height: 1.6494rem;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
   text-transform: uppercase;
   background-color: rgb(249, 221, 29);
@@ -799,35 +822,61 @@ html {
   background-color: rgb(224, 22, 22);
 }
 #testimonial_slider .carousel-item {
-  padding: 7% 20%;
+  padding: 7% 27%;
 }
-#testimonial_slider i {
-  color: rgb(255, 255, 255);
-  text-align: center;
+#testimonial_slider img {
+  width: 3rem;
+  margin-bottom: 1rem;
 }
 #testimonial_slider p {
-  font-size: 1rem;
+  hyphens: auto;
+  font-size: 0.9rem;
   font-weight: 500;
   color: rgb(255, 255, 255);
+  word-break: break-all;
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
 }
 #testimonial_slider span {
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: left;
   color: rgb(255, 255, 255);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
 }
 
+#testimonials .carousel-control-prev {
+  justify-content: left;
+}
+#testimonials .carousel-control-next {
+  justify-content: right;
+}
+#testimonials .carousel-item {
+  padding: 7% 4%;
+}
+#testimonials .carousel-control-prev-icon {
+  background-image: none;
+}
+#testimonials .carousel-control-prev-icon i {
+  color: rgb(0, 0, 0);
+}
+#testimonials .carousel-control-next-icon {
+  background-image: none;
+}
+#testimonials .carousel-control-next-icon i {
+  color: rgb(0, 0, 0);
+}
+#testimonials .testimonial_top {
+  margin-left: 3rem;
+}
 #testimonials .testimonial_top h3, #testimonials .testimonial_top .h3 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #testimonials .testimonial_top p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
@@ -838,14 +887,14 @@ html {
   max-height: 100%;
 }
 #testimonials h3, #testimonials .h3 {
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-weight: bold;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
 #testimonials p {
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
@@ -854,6 +903,7 @@ html {
   width: 100%;
   color: rgb(255, 255, 255);
   border-radius: 1.3rem;
+  padding-left: 1.5rem;
   background-color: rgb(224, 22, 22);
 }
 #testimonials .btn_red i {
@@ -861,25 +911,26 @@ html {
   margin: 1rem 0;
   border-radius: 50%;
   position: relative;
-  padding: 0.5rem 0.7rem;
+  padding: 0.3rem 0.5rem;
   color: rgb(224, 22, 22);
   background-color: rgb(255, 255, 255);
 }
 #testimonials .btn_red span {
   float: left;
   text-align: left;
-  padding: 0.5rem 1rem;
   position: absolute;
-  left: 10%;
+  left: 14%;
 }
 #testimonials .btn_red .btn_red_span_1 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.3rem;
+  padding-top: 0.5rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 #testimonials .btn_red .btn_red_span_2 {
-  font-size: 0.9rem;
+  padding-top: 0.3rem;
+  font-size: 0.7rem;
 }
 #testimonials .btn_black {
   width: 100%;
@@ -889,14 +940,11 @@ html {
   border-radius: 1.3rem;
   background-color: rgb(0, 0, 0);
 }
-#testimonials .btn_black i {
+#testimonials .btn_black img {
   float: left;
   margin: 1rem 0;
-  border-radius: 50%;
+  width: 2rem;
   position: relative;
-  padding: 0.5rem 0.7rem;
-  color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
 }
 #testimonials .btn_black span {
   text-align: center;
@@ -904,15 +952,15 @@ html {
   position: absolute;
   left: 10%;
   color: rgb(255, 255, 255);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
   text-transform: uppercase;
 }
 
 #accordion .accordion-button {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: rgb(224, 22, 22);
   font-family: "Cinzel", "Trajan Pro", "Open Sans";
 }
@@ -943,14 +991,18 @@ html {
   display: none;
 }
 #accordion .accordion-body {
-  padding: 1rem 4.25rem;
+  padding: 1rem 1.5rem 1rem 4.25rem;
   hyphens: auto;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   word-break: break-all;
   color: rgb(0, 0, 0);
   font-family: "Libre Franklin", "Franklin Gothic Book", "Open Sans";
+  font-size: 0.9rem;
 }
 
+footer .social_icon a {
+  text-decoration: none;
+}
 footer .social_icon i {
   padding: 0.5rem;
   border-radius: 50%;
@@ -964,112 +1016,296 @@ footer .footer_logo img {
 }
 
 @media only screen and (min-width: 200px) and (max-width: 991px) {
-  #home form h2, #home form .h2 {
-    font-size: 1.3rem;
+  #home .home_left .home_left_inner p {
+    font-size: 0.7rem;
+    line-height: 1rem;
   }
-  #home form button {
-    width: 10rem;
+  #home .home_right form h2, #home .home_right form .h2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  #home .home_right form p {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
   }
   #videro_section .btn_red .btn_red_span_1 {
+    font-size: 0.7rem;
     letter-spacing: 0.1rem;
-  }
-  #videro_section .btn_red span {
-    left: 13%;
-  }
-  #videro_section .btn_black span {
-    letter-spacing: 0.1rem;
-    padding: 0.5rem 3rem;
   }
   #videro_section .btn_red .btn_red_span_2 {
+    font-size: 0.6rem;
+    padding: 0;
+  }
+  #videro_section .btn_red span {
+    left: 23%;
+  }
+  #videro_section .btn_black span {
     font-size: 0.7rem;
-  }
-  #testimonials .btn_red .btn_red_span_1 {
-    letter-spacing: 0.1rem;
-  }
-  #testimonials .btn_red span {
-    left: 13%;
-  }
-  #testimonials .btn_black span {
     letter-spacing: 0.1rem;
     padding: 0.5rem 3rem;
   }
-  #testimonials .btn_red .btn_red_span_2 {
+  .courses_main .courses {
+    width: 30rem;
+    height: 15rem;
+    margin-right: 2rem;
+  }
+  .courses_main .book_a_consultation {
+    width: 30rem;
+    height: 15rem;
+  }
+  #gurantee p {
+    font-size: 0.5rem;
+  }
+  #testimonials .testimonial_top p {
+    font-size: 0.6rem;
+  }
+  #testimonials p {
+    font-size: 0.6rem;
+  }
+  #testimonials .btn_red .btn_red_span_1 {
     font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+  }
+  #testimonials .btn_red .btn_red_span_2 {
+    font-size: 0.6rem;
+    padding: 0;
+  }
+  #testimonials .btn_red span {
+    left: 23%;
+  }
+  #testimonials .btn_black span {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    padding: 0.5rem 3rem;
   }
 }
-@media only screen and (min-width: 200px) and (max-width: 480px) {
+@media only screen and (min-width: 200px) and (max-width: 540px) {
   #home {
     background-image: none;
   }
   #home .home_left {
-    background-image: linear-gradient(to right, rgba(238, 34, 12, 0.55), rgba(0, 0, 0, 0.99)), url(../../img/jesse/jpg/jesse-james-2.1920x1080.jpg);
-    background-position: center;
+    background-image: url(../../img/landingPage/home_background.png);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   .home_left_inner {
     margin-left: 50%;
   }
   #home .home_left .home_left_inner h1, #home .home_left .home_left_inner .h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
   }
   #home .home_left .home_left_inner p {
-    font-size: 0.7rem;
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+    margin-top: 0.5rem;
   }
   #home .home_left .home_left_inner button {
-    width: 9rem;
-    padding: 0.7rem 0rem;
+    font-size: 0.6rem;
+    padding: 0.3rem 2rem;
   }
   #home .home_right {
     position: relative;
     top: 0;
   }
+  #home .home_right form h2, #home .home_right form .h2 {
+    font-size: 1rem;
+    line-height: 1.3rem;
+  }
   #home .home_right form p {
-    font-size: 0.76rem;
+    font-size: 0.6rem;
+    margin-bottom: 1rem;
   }
   #home .home_right form button {
-    width: 9rem;
-    padding: 0.7rem 0rem;
+    font-size: 0.6rem;
+    padding: 0.3rem 2rem;
   }
   #videro_section iframe {
     min-height: 13rem;
   }
   #videro_section h3, #videro_section .h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #videro_section p {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
   #videro_section .btn_red .btn_red_span_1 {
+    font-size: 0.6rem;
     letter-spacing: 0.1rem;
+    padding-top: 0.4rem;
+  }
+  #videro_section .btn_red .btn_red_span_2 {
+    font-size: 0.5rem;
+    padding: 0;
   }
   #videro_section .btn_red span {
-    left: 13%;
+    left: 27%;
   }
   #videro_section .btn_red {
-    padding: 1rem 1rem;
+    padding: 0.5rem;
+  }
+  #videro_section .btn_red i {
+    margin: 0.5rem 0;
+  }
+  #videro_section .btn_black img {
+    margin: 0.5rem 0;
+    width: 1.5rem;
   }
   #videro_section .btn_black span {
+    font-size: 0.6rem;
     letter-spacing: 0.1rem;
+    padding: 0.1rem 0rem 0 5rem;
+  }
+  .courses_main .courses {
+    width: 30rem;
+    height: 10rem;
+    margin-right: 1rem;
+  }
+  .courses_main .book_a_consultation {
+    width: 30rem;
+    height: 10rem;
   }
   .courses_main .courses h4, .courses_main .courses .h4 {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .courses_main .book_a_consultation h4, .courses_main .book_a_consultation .h4 {
+    font-size: 0.7rem;
+  }
+  #about img {
+    width: 100%;
+  }
+  #about h3, #about .h3 {
     font-size: 1rem;
   }
+  #about p {
+    font-size: 0.6rem;
+  }
+  #about button {
+    font-size: 0.6rem;
+    padding: 0.3rem 2rem;
+  }
+  #book .book_text h1, #book .book_text .h1 {
+    font-size: 1rem;
+  }
+  #book .book_text p {
+    margin-top: 0.5rem;
+    font-size: 0.6rem;
+    line-height: 0.7rem;
+  }
+  #book .book_text button {
+    font-size: 0.6rem;
+    padding: 0.3rem 2rem;
+  }
+  #book .book_image img {
+    height: 10rem;
+  }
+  #benefits .benefits_left h4, #benefits .benefits_left .h4 {
+    font-size: 1rem;
+  }
+  #benefits .benefits_left p {
+    font-size: 0.6rem;
+  }
+  #benefits .benefits_left button {
+    display: none;
+  }
+  #benefits .benefits_right h4, #benefits .benefits_right .h4 {
+    font-size: 1rem;
+  }
+  #benefits .benefits_right p {
+    font-size: 0.6rem;
+  }
+  #guarantee_banner .guarantee_banner_text h4, #guarantee_banner .guarantee_banner_text .h4 {
+    font-size: 1rem;
+  }
+  #guarantee_banner {
+    background-size: cover;
+    background-position: top;
+  }
+  #guarantee_banner .guarantee_banner_text {
+    padding-top: 2rem;
+  }
+  #guarantee_banner .guarantee_banner_text p {
+    font-size: 0.4rem;
+    line-height: 0.7rem;
+  }
+  #guarantee_banner .guarantee_banner_text button {
+    font-size: 0.6rem;
+    padding: 0.3rem 2rem;
+  }
+  #testimonial_slider .carousel-item {
+    padding: 7% 15%;
+  }
+  #testimonial_slider img {
+    width: 2rem;
+    margin-bottom: 0.8rem;
+  }
+  #testimonial_slider p {
+    font-size: 0.8rem;
+  }
+  #testimonial_slider span {
+    font-size: 0.9rem;
+  }
+  #testimonials .testimonial_top {
+    margin-left: 0rem;
+  }
+  #testimonials .testimonial_top h3, #testimonials .testimonial_top .h3 {
+    font-size: 1rem;
+  }
+  #testimonials .testimonial_top p {
+    font-size: 0.6rem;
+  }
+  .carousel-control-prev {
+    left: -2rem !important;
+  }
+  .carousel-control-next {
+    right: -2rem !important;
+  }
+  #testimonials iframe {
+    min-height: 10rem;
+  }
+  #testimonials h3, #testimonials .h3 {
+    font-size: 1rem;
+  }
+  #testimonials p {
+    font-size: 0.6rem;
+  }
   #testimonials .btn_red .btn_red_span_1 {
+    font-size: 0.6rem;
     letter-spacing: 0.1rem;
+    padding-top: 0.4rem;
+  }
+  #testimonials .btn_red .btn_red_span_2 {
+    font-size: 0.5rem;
+    padding: 0;
   }
   #testimonials .btn_red span {
-    left: 13%;
+    left: 27%;
   }
   #testimonials .btn_red {
-    padding: 1rem 1rem;
+    padding: 0.5rem;
+  }
+  #testimonials .btn_red i {
+    margin: 0.5rem 0;
+  }
+  #testimonials .btn_black img {
+    margin: 0.5rem 0;
+    width: 1.5rem;
   }
   #testimonials .btn_black span {
+    font-size: 0.6rem;
     letter-spacing: 0.1rem;
+    padding: 0.1rem 0rem 0 5rem;
   }
   #accordion .accordion-button {
     font-size: 1rem;
+  }
+  #accordion .accordion-button::before {
+    margin-right: 1rem;
+  }
+  #accordion .accordion-body {
+    font-size: 0.6rem;
+    padding: 1rem 1.5rem 1rem 3.25rem;
   }
 }
 /******* MD.AL-AMIN code End Here *******/
